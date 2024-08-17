@@ -1,0 +1,56 @@
+.occupation_area_first_title {
+  font: var(--headline-headline-lg);
+  background: var(--gradient-primarycolor-greatersecondarycolor);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.occupation_area_section {
+  background-color: var(--brand_primary_100);
+  display: flex;
+  flex-direction: column;
+  margin-top: 425px;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+.occupation_area_areas {
+  display: flex;
+  flex-direction: row;
+  gap: 2.857vw;
+  padding: 64px 64px 0px 64px;
+}
+.occupation_area_areas p {
+  color: var(--Gray-scale-950);
+
+  font: var(--body-body-md);
+  margin-top: 24px;
+}
+.occupation_area_areas h2 {
+  font: var(--headline-headline-sm);
+}
+.occupation_area_trusted_by {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  align-items: center;
+}
+.trusted_by_companies {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  align-items: center;
+  gap: 6.25vw;
+}
+.occupation_area_second_title {
+  font: var(--headline-headline-lg);
+  background: var(--gradient-primarycolor-greatersecondarycolor);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.trusted_by_companies_imgs {
+  display: flex;
+  justify-content: center;
+
+}

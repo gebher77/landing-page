@@ -1,0 +1,32 @@
+# Ignorar diretórios e arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos gerados automaticamente por editores de texto
+*.log
+
+# Ignorar diretório do Visual Studio Code
+.vscode/
+
+# Ignorar arquivos temporários de desenvolvimento
+*.tmp
+*.swp
+
+# Ignorar arquivos de backup de editores de texto
+*~
+*.bak
+*.orig
+
+# Ignorar arquivos gerados por compiladores ou pré-processadores (se aplicável)
+*.sass-cache/
+*.cache/
+
+# Ignorar minificações, builds ou compilados
+*.min.css
+*.min.js
+dist/
+build/
+node_modules/
+
+# Ignorar arquivos de configuração específicos de um ambiente local
+.env

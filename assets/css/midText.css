@@ -1,0 +1,13 @@
+.mid_text_section {
+  display: flex;
+  padding: 120px 331px 120px 331px;
+  font: var(--headline-headline-lg);
+  background: var(--gradiente-destaque-diagonal-pretotoroxo);
+  color: var(--gray_scale_50);
+  justify-content: center;
+}
+.mid_text {
+  display: flex;
+  text-align: center;
+  width: 759px;
+}
