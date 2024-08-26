@@ -1,0 +1,29 @@
+.aboutUs_hero_background_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .aboutUs_hero_main_foreground {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 64px;
+    margin-top: 230px;
+  }
+  .aboutUs_hero_main_title {
+    font: var(--headline-headline-xxl);
+    color: var(--gray_scale_50);
+    margin-right: 12px;
+  }
+  .aboutUs_hero_main_text {
+    color: var(--gray_scale_50);
+    font: var(--body-body-lg);
+    text-align: center;
+    width: 1120px;
+    margin-top: 20px;
+  }
+  
