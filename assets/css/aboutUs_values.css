@@ -1,0 +1,42 @@
+.aboutUs_values_section {
+  display: flex;
+  background-color: var(--brand_primary_100);
+  justify-content: space-evenly;
+  padding-bottom: 120px;
+}
+.values_our_mission,
+.values_our_values {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.values_our_mission_title,
+.values_our_values_title {
+  font: var(--headline-headline-lg);
+  background: var(
+    --gradiente-padrao,
+    linear-gradient(180deg, #15e768 0%, #8b15e7 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.values_our_mission_title::after,
+.values_our_values_title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 35%;
+  height: 4px;
+  background: linear-gradient(to right, #4db8ff, #9b51e0);
+}
+
+.values_our_mission_text,
+.values_our_values_text {
+  font: var(--body-body-lg);
+  width: 597px;
+}

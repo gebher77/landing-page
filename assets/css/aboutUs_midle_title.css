@@ -1,0 +1,16 @@
+.aboutUs_middle_title_section{
+background-color: var(--brand_primary_100);
+    display: flex;
+justify-content: center;
+align-items: center;
+padding: 120px;
+
+}
+
+.middle_title{
+    font: var(--headline-headline-lg);
+}
+
+.purple_mark{
+    color: var(--brand_primary_700_original);
+}

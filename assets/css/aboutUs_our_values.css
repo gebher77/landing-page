@@ -1,10 +1,10 @@
-.our_values_section {
+.aboutUs_our_values_section {
   background-color: var(--gray_scale_950);
   margin-top: 474px;
   padding: 17px;
 }
 
-.our_values_section_text {
+.aboutUs_our_values_section_text {
   display: flex;
   justify-content: center;
   align-items: center;
