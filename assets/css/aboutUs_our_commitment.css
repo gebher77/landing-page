@@ -1,17 +1,16 @@
-.aboutUs_our_team_section {
+.aboutUs_our_commitment_section {
   display: flex;
   background-color: var(--brand_primary_100);
-  padding: 0px 64px;
-  align-items: center;
-  justify-content: space-evenly;
-  padding-top: 80px;
+  padding-bottom: 120px;
+  justify-content: center;
 }
-.aboutUs_our_team_content {
+.our_commitment {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
 }
-.our_team_title {
+.our_commitment_title {
   font: var(--headline-headline-lg);
   background: var(
     --gradiente-padrao,
@@ -22,17 +21,20 @@
   -webkit-text-fill-color: transparent;
   position: relative;
 }
-.our_team_title::after {
+
+.our_commitment_title::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 35%;
-  height: 4px;
-  background: linear-gradient(to right, #4db8ff, #9b51e0);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -4px;
+  width: 187.5px;
+  height: 3px;
+  background: linear-gradient(to right, #00bfff, #8a2be2);
 }
 
-.our_team_text {
+.our_commitment_text {
   font: var(--body-body-lg);
-  width: 597px;
+  width: 1312px;
+  align-items: center;
 }

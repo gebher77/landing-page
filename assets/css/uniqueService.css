@@ -1,57 +1,52 @@
-.why_choose_us_section{
-
-    background-color: var( --brand_primary_100);
-    padding-bottom: 120px;
-
+.why_choose_us_section {
+  background-color: var(--brand_primary_100);
+  padding-bottom: 120px;
 }
-.why_choose_us{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.why_choose_us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.why_choose_us_header{
-    display: flex;
-    flex-direction: column;
-    width:80%;
-    margin-left: 120px;
+.why_choose_us_header {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 120px;
 }
-.why_choose_us_title{
-    text-align: start;
-    font: var(--headline-headline-lg);
-    background: var(--gradient-primarycolor-greatersecondarycolor);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.why_choose_us_title {
+  text-align: start;
+  font: var(--headline-headline-lg);
+  background: var(--gradient-primarycolor-greatersecondarycolor);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.why_choose_us_text{
-    margin-top: 24px;
-    font: var( --body-body-lg);
+.why_choose_us_text {
+  margin-top: 24px;
+  font: var(--body-body-lg);
 }
 
-.why_choose_us_benefits h2{
-font: var(--headline-headline-sm);
+.why_choose_us_benefits h2 {
+  font: var(--headline-headline-sm);
 }
 
-.why_choose_us_benefits p{
-    font: var(--body-body-md);
-    margin-top: 16px;
-
-
+.why_choose_us_benefits p {
+  font: var(--body-body-md);
+  margin-top: 16px;
 }
-.why_choose_us_benefits{
-    display: flex;
-    flex-direction: row;
-    gap: 2.857vw;
-    margin-top: 40px;
-    align-items: center;
-    width: fit-content;
-
+.why_choose_us_benefits {
+  display: flex;
+  flex-direction: row;
+  gap: 2.857vw;
+  margin-top: 40px;
+  align-items: center;
+  width: fit-content;
 }
-.why_choose_us_benefits_texts{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 584px;
-    gap: 2.857vw;
+.why_choose_us_benefits_texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 584px;
+  gap: 2.857vw;
 }
