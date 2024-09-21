@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+ol, ul {
+	list-style: none;
+}
 
 :root {
   /*COLORS */
@@ -77,6 +80,46 @@
     290deg,
     #3f006c 0%,
     #000 100%
+  );
+  --gradiente-padrao-diagonal: linear-gradient(
+    134.51deg,
+    rgba(21, 231, 104, 1) 0%,
+    rgba(139, 21, 231, 1) 100%
+  );
+  --gradiente-padrao-diagonal-roxo: linear-gradient(
+    118.71deg,
+    rgba(21, 231, 104, 1) 0%,
+    rgba(139, 21, 231, 1) 100%
+  );
+  --gradiente-padrao-diagonal-verde: linear-gradient(
+    117.75deg,
+    rgba(21, 231, 104, 1) 0%,
+    rgba(139, 21, 231, 1) 100%
+  );
+  --gradiente-padrao-vertical-verde: linear-gradient(
+    -0.49deg,
+    rgba(139, 21, 231, 1) 0%,
+    rgba(21, 231, 104, 1) 100%
+  );
+  --gradiente-hex-cima: linear-gradient(
+    180deg,
+    rgba(21, 231, 104, 1) 0%,
+    rgba(139, 21, 231, 1) 100%
+  );
+  --gradiente-hex-baixo: linear-gradient(
+    0deg,
+    rgba(21, 231, 104, 1) 0%,
+    rgba(139, 21, 231, 1) 100%
+  );
+  --gradiente-hex-direita: linear-gradient(
+    270deg,
+    rgba(21, 231, 104, 1) 0%,
+    rgba(139, 21, 231, 1) 100%
+  );
+  --gradiente-hex-esquerda: linear-gradient(
+    90deg,
+    rgba(21, 231, 104, 1) 0%,
+    rgba(139, 21, 231, 1) 100%
   );
 
   /* Effects */
