@@ -9,7 +9,6 @@
   background-color: var(--brand_primary_100);
   display: flex;
   flex-direction: column;
-  margin-top: 474px;
   align-items: center;
   padding-top: 80px;
   padding-bottom: 120px;
@@ -22,9 +21,8 @@
 }
 .occupation_area_areas p {
   color: var(--Gray-scale-950);
-
   font: var(--body-body-md);
-  margin-top: 24px;
+  padding-top: 24px;
 }
 .occupation_area_areas h2 {
   font: var(--headline-headline-sm);
@@ -32,7 +30,7 @@
 .occupation_area_trusted_by {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
+  padding-top: 120px;
   align-items: center;
 }
 .trusted_by_companies {

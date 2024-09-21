@@ -32,13 +32,18 @@
 
 .why_choose_us_benefits p {
   font: var(--body-body-md);
-  margin-top: 16px;
+ 
+}
+.why_choose_us_benefit_span{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .why_choose_us_benefits {
   display: flex;
   flex-direction: row;
   gap: 2.857vw;
-  margin-top: 40px;
+  padding-top: 40px;
   align-items: center;
   width: fit-content;
 }
