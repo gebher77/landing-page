@@ -45,6 +45,7 @@ main {
   gap: 40px;
 }
 .input {
+  font: var(--body-body-md);
   display: flex;
   height: 48px;
   padding: 12px 16px;
@@ -54,7 +55,7 @@ main {
   border-radius: 8px;
   background: var(--brand_primary_100);
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-  border: none ;
+  border: none;
 }
 .input_message {
   font: var(--body-body-md);
@@ -67,13 +68,12 @@ main {
   border-radius: 8px;
   background: var(--brand_primary_100);
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-  border: none ;
+  border: none;
   resize: both;
   max-height: 313px;
   max-width: 692px;
 }
 .label {
-  font: var(--body-body-sm);
   display: flex;
   align-items: flex-start;
   width: 563px;
@@ -83,31 +83,38 @@ main {
   flex-direction: column;
   gap: 4px;
 }
-.button{
-display: flex;
-padding: 9px 20px;
-border-radius: 8px;
-border: none ;
-color: var(--brand_primary_100);
-background: linear-gradient(135deg, #15E768 -6.32%, #8B15E7 117.77%);
-cursor: pointer;
+.button {
+  display: flex;
+  padding: 9px 20px;
+  border-radius: 8px;
+  border: none;
+  color: var(--brand_primary_100);
+  background: linear-gradient(135deg, #15e768 -6.32%, #8b15e7 117.77%);
+  cursor: pointer;
+  font: var(--body-body-md);
 }
-.need_help_contact_infos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 32px;
+.need_help_contact_infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
 }
-.need_help_info{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font: (--body-body-md);
+.need_help_info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.info_title{
-    font: var(--headline-headline-sm);
-    background: var(--gradiente-padrao, linear-gradient(180deg, #15E768 0%, #8B15E7 100%));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.info_text{
+  font: var(--body-body-md);
+}
+.info_title {
+  font: var(--headline-headline-sm);
+  background: var(
+    --gradiente-padrao,
+    linear-gradient(180deg, #15e768 0%, #8b15e7 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
