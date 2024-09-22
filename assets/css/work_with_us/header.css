@@ -21,6 +21,7 @@ select {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .nav_bar_header_link_buttons button {
   font: var(--headline-headline-xxs);
@@ -39,3 +40,11 @@ select {
   background: linear-gradient(135deg, #15e768 -6.32%, #8b15e7 117.77%);
   border: none;
 }
+.language-selector {
+  display: flex;
+  align-items: center;
+}
+.language-arrow {
+  margin-left: -15px; /* Ajuste o valor conforme necessário */
+}
+

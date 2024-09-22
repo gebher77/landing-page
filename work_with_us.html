@@ -10,24 +10,27 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
 </head>
 <body>
-    <header>
-        <section class="nav_bar_header_section">
-          <img
+  <header>
+    <section class="nav_bar_header_section">
+        <img
             class="logo_header"
             src="./assets/imgs/black_logo.png"
             alt="Logo da TechNova Solutions"
-          />
-          <nav class="nav_bar_header_link_buttons">
+        />
+        <nav class="nav_bar_header_link_buttons">
             <a href="./index.html">Início</a>
             <a href="./contact.html">Contato</a>
             <a href="./aboutUs.html">Sobre nós</a>
-            <select name="select_language">
-              <option value="PT-BR">PT</option>
-              <option value="EN">EN</option>
-            </select>
-          </nav>
-        </section>
-      </header>
+            <div class="language-selector">
+              <select name="select_language" id="select-language" class="language-selector">
+                <option value="PT-BR">PT</option>
+                <option value="EN">EN</option>
+              </select>
+              <img src="./assets/imgs/seta-baixo.png" alt="Seta" class="language-arrow" />
+            </div>
+        </nav>
+    </section>
+</header>
     <main>
         <section class="hero">
             <div class="text_with_button">
@@ -62,6 +65,6 @@
           <p>Copyright &copy 2024 Empresa. Todos os direitos reservados.</p>
         </div>
       </footer>
-
+      <script src="./assets/js/translate.js"></script>
 </body>
 </html>
