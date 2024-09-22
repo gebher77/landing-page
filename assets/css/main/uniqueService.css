@@ -32,9 +32,8 @@
 
 .why_choose_us_benefits p {
   font: var(--body-body-md);
- 
 }
-.why_choose_us_benefit_span{
+.why_choose_us_benefit_div {
   display: flex;
   flex-direction: column;
   gap: 16px;

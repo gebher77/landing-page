@@ -14,7 +14,7 @@
 .costumer_testimonials_div {
   display: flex;
   flex-direction: column;
-   -top: 40px;
+  -top: 40px;
 }
 .testimonials_text {
   font: var(--body-body-md);

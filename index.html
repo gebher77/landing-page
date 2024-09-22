@@ -23,22 +23,22 @@
   <body>
     <header>
       <section class="nav_bar_header_section">
-        <img
-          class="logo_header"
-          src="./assets/imgs/nav_logo_name.png"
-          alt="Logo da TechNova Solutions"
-        />
-        <nav class="nav_bar_header_link_buttons">
-          <a href="">Início</a>
-          <a href="./contact.html">Contato</a>
-          <a href="./aboutUs.html">Sobre nós</a>
-          <select name="select_language">
-            <option value="PT-BR">PT</option>
-            <option value="EN">EN</option>
-          </select>
-        </nav>
+          <img
+              class="logo_header"
+              src="./assets/imgs/nav_logo_name.png"
+              alt="Logo da TechNova Solutions"
+          />
+          <nav class="nav_bar_header_link_buttons">
+              <a href="">Início</a>
+              <a href="./contact.html">Contato</a>
+              <a href="./aboutUs.html">Sobre nós</a>
+              <select name="select_language" id="select-language">
+                  <option value="PT-BR">PT</option>
+                  <option value="EN">EN</option>
+              </select>
+          </nav>
       </section>
-    </header>
+  </header>
     <main>
       <section class="hero_main_section">
         <img
@@ -192,7 +192,7 @@
 
           <div class="why_choose_us_benefits">
             <div class="why_choose_us_benefits_texts">
-              <span class="why_choose_us_benefit_span">
+              <div class="why_choose_us_benefit_div">
                 <h2>Abordagem Personalizada</h2>
                 <p>
                   Na TechNova Solutions, cada cliente é único. Nossa equipe se
@@ -200,9 +200,9 @@
                   de cada projeto, oferecendo soluções personalizadas e
                   adaptadas às suas demandas específicas.
                 </p>
-              </span>
+              </div>
 
-              <span class="why_choose_us_benefit_span">
+              <div class="why_choose_us_benefit_div">
                 <h2>Suporte Contínuo</h2>
                 <p>
                   Além de desenvolver soluções tecnológicas inovadoras, nos
@@ -211,9 +211,9 @@
                   responder a perguntas, fornecer atualizações e garantir que
                   sua experiência conosco seja impecável.
                 </p>
-              </span>
+              </div>
 
-              <span class="why_choose_us_benefit_span">
+              <div class="why_choose_us_benefit_div">
                 <h2>Parceria de Longo Prazo</h2>
                 <p>
                   Valorizamos relacionamentos de longo prazo com nossos
@@ -222,7 +222,7 @@
                   trabalhando lado a lado para impulsionar o crescimento e o
                   sucesso de sua empresa no mundo digital.
                 </p>
-              </span>
+              </div>
             </div>
             <img
               class="img_around_table"
@@ -355,5 +355,6 @@
     </footer>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/translate.js"></script>
   </body>
 </html>

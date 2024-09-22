@@ -19,21 +19,22 @@
   <body>
     <header>
       <section class="nav_bar_header_section">
-        <img
-          class="logo_header"
-          src="./assets/imgs/nav_logo_name.png"
-          alt="Logo da TechNova Solutions"
-        />
-        <nav class="nav_bar_header_link_buttons">
-          <a href="./index.html">Início</a>
-          <a href="./contact.html">Contato</a>
-          <a href="./aboutUs.html">Sobre nós</a>
-          <select name="select_language">
-            <option value="PT-BR">PT</option>
-            <option value="EN">EN</option>
-          </select>
+          <img
+              class="logo_header"
+              src="./assets/imgs/nav_logo_name.png"
+              alt="Logo da TechNova Solutions"
+          />
+          <nav class="nav_bar_header_link_buttons">
+              <a href="./index.html">Início</a>
+              <a href="./contact.html">Contato</a>
+              <a href="./aboutUs.html">Sobre nós</a>
+              <select name="select_language" id="select-language">
+                  <option value="PT-BR">PT</option>
+                  <option value="EN">EN</option>
+              </select>
+          </nav>
       </section>
-    </header>
+  </header>
 
     <main>
       <div></div>
@@ -178,7 +179,8 @@
           </p>
         </div>
         <div class="emerging_tecs_img">
-          <img src="./assets/imgs/tecs_emergentes.png" alt="" />
+          <img id="tec_emerges" data-en="./assets/imgs/aboutUs_ingles.png" data-pt="./assets/imgs/tecs_emergentes.png" src="./assets/imgs/tecs_emergentes.png" alt="" />
+
         </div>
       </section>
     </main>
@@ -213,5 +215,6 @@
         <p>Copyright &copy 2024 Empresa. Todos os direitos reservados.</p>
       </span>
     </footer>
+    <script src="./assets/js/translate.js"></script>
   </body>
 </html>
