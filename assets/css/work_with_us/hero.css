@@ -28,11 +28,12 @@ main {
 
   gap: 32px;
 }
-p {
+.text {
   font: var(--body-body-lg);
   text-align: center;
   width: 532px;
 }
+
 button {
   display: flex;
   font: var(--headline-headline-xxs);
