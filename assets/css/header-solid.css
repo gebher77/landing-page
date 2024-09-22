@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 3px 64px;
+    border-radius: 0px 0px 24px 24px;
+    justify-content: space-between;
+    background-color: var(--brand_primary_100);
+    nav {
+      font: var(--headline-headline-xxs);
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      a {
+        text-decoration: none;
+        p {
+          background: var(--gradient-primarycolor-greatersecondarycolor);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      select {
+        font: var(--headline-headline-xxs);
+        text-decoration: none;
+        background: var(--gradient-primarycolor-greatersecondarycolor);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: none;
+      }
+    }
+  }
