@@ -35,7 +35,9 @@
 .star1,
 .star2,
 .star3 {
+  display: flex;
   margin-right: 250px;
+  padding-bottom: 2rem;
 }
 
 .costumer_name {

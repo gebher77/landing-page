@@ -1,0 +1,25 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#1E1E1E"/>
+<g id="Desktop - Home - Portugu&#195;&#170;s" clip-path="url(#clip0_2_3)">
+<rect width="1440" height="5094.89" transform="translate(-1280 -4849)" fill="#F4E6FF"/>
+<g id="Footer">
+<rect width="1440" height="344" transform="translate(-1280 -98)" fill="black"/>
+<g id="Content">
+<g id="Social Links">
+<g id="Icon / X">
+<path id="Vector" d="M17.1761 4.24268H19.9362L13.9061 11.0201L21 20.2427H15.4456L11.0951 14.6493L6.11723 20.2427H3.35544L9.80517 12.9935L3 4.24268H8.69545L12.6279 9.3553L17.1761 4.24268ZM16.2073 18.6181H17.7368L7.86441 5.78196H6.2232L16.2073 18.6181Z" fill="url(#paint0_linear_2_3)"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2_3" x1="12" y1="4.24268" x2="12" y2="20.2427" gradientUnits="userSpaceOnUse">
+<stop stop-color="#15E768"/>
+<stop offset="1" stop-color="#8B15E7"/>
+</linearGradient>
+<clipPath id="clip0_2_3">
+<rect width="1440" height="5094.89" fill="white" transform="translate(-1280 -4849)"/>
+</clipPath>
+</defs>
+</svg>
