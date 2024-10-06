@@ -3,7 +3,6 @@ html {
 }
 
 main {
-  margin: 64px;
   background-color: var(--brand_primary_100);
   margin: 80px 160px;
   padding: 32px 64px;
@@ -11,46 +10,44 @@ main {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  section:nth-child(1) {
-    ul {
-      display: flex;
-      gap: 16px;
-      li {
-        a {
-          font: var(--headline-headline-xs);
-          text-decoration: none;
-        }
-      }
-      li:nth-child(1) {
-        a {
-          p {
-            color: var(--gray_scale_950);
-          }
-        }
-      }
-      li:nth-child(3) {
-        a {
-          p {
-            background: var(--gradient-primarycolor-greatersecondarycolor);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-        }
-      }
+
+  section:nth-of-type(1) {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    a {
+      text-decoration: none;
+      font: var(--headline-headline-xs);
+    }
+
+    a:nth-of-type(1) {
+      color: var(--gray_scale_950);
+    }
+
+    a:nth-of-type(2) {
+      background: var(--gradient-primarycolor-greatersecondarycolor);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
     }
   }
+
   section:nth-child(2) {
     ul {
       display: flex;
       justify-content: space-evenly;
+
       li {
         display: flex;
         align-items: center;
         gap: 16px;
+
         p {
           font: var(--headline-headline-sm);
         }
+
         .active {
           background: var(--gradiente-padrao-diagonal-verde);
           background-clip: text;
@@ -58,32 +55,38 @@ main {
           -webkit-text-fill-color: transparent;
         }
       }
+
       li:nth-child(1) {
         border-bottom: 5px solid;
         border-image: var(--gradiente-padrao-diagonal-verde) 1;
       }
     }
   }
+
   .paragraphs-servicesAndPrivacy {
     display: flex;
     flex-direction: column;
     gap: 32px;
+
     .container-text {
       display: flex;
       flex-direction: column;
       gap: 16px;
     }
-    h1,
+
     h1,
     p {
       color: var(--Gray-scale-950);
     }
+
     h1 {
       font: var(--headline-headline-xl);
     }
+
     h2 {
       font: var(--headline-headline-md);
     }
+
     p {
       font: var(--body-body-md);
     }

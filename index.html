@@ -1,57 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <title>Landing Page Institucional</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page Institucional</title>
+
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
+
+    <!-- Style -->
     <link rel="stylesheet" href="./assets/css/root.css" />
     <link rel="stylesheet" href="./assets/css/header-transparent.css" />
-    <link rel="stylesheet" href="./assets/css/index/hero.css" />
-    <link rel="stylesheet" href="./assets/css/index/whyChooseUs.css" />
-    <link rel="stylesheet" href="./assets/css/index/midText.css" />
-    <link rel="stylesheet" href="./assets/css/index/ourServices.css" />
-    <link rel="stylesheet" href="./assets/css/index/uniqueService.css" />
-    <link rel="stylesheet" href="./assets/css/index/estimate.css" />
+    <link rel="stylesheet" href="./assets/css/index/style.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
   </head>
+  
   <body>
+
     <header>
-      <section class="nav_bar_header_section">
-          <img
-              class="logo_header"
-              src="./assets/imgs/nav_logo_name.svg"
-              alt="Logo da TechNova Solutions"
-          />
-          <nav class="nav_bar_header_link_buttons">
-              <a href="">Início</a>
-              <a href="./contact.html">Contato</a>
-              <a href="./aboutUs.html">Sobre nós</a>
-              <div class="language-selector">
-                <select name="select_language" id="select-language" class="language-selector">
-                  <option value="PT-BR">PT</option>
-                  <option value="EN">EN</option>
-                </select>
-                <img src="./assets/imgs/seta-baixo.svg" alt="Seta" class="language-arrow" />
-              </div>
-          </nav>
-      </section>
-  </header>
+      <img src="./assets/imgs/logo_branco_nav.svg" alt="Logo da TechNova Solutions" />
+
+      <nav>
+        <a href="./index.html"><p>Início</p></a>
+        <a href="./contact.html"><p>Contato</p></a>
+        <a href="./aboutUs.html"><p>Sobre nós</p></a>
+        <div>
+          <select name="select_language" id="select-language">
+            <option value="PT-BR">PT</option>
+            <option value="EN">EN</option>
+          </select>
+          <img src="./assets/imgs/seta-baixo.svg" alt="">
+        </div>
+      </nav>
+
+    </header>
+
     <main>
-      <section class="hero_main_section">
-        <img
-          class="hero_background_image"
-          src="./assets/imgs/hero_test.png"
-          alt="Imagem de fundo do hero"
-        />
-        <div class="hero_main_foreground">
-          <h1 class="hero_main_title">TechNova Solutions</h1>
-          <p class="hero_main_text">
+      
+      <section>
+        <img src="./assets/imgs/hero_test.png" alt="Banner"/>
+        <div>
+          <h1>TechNova Solutions</h1>
+          <p>
             Transformando ideias em realidade digital. Desenvolvimento de
             software inovador e soluções tecnológicas sob medida. Conheça a
             TechNova Solutions.
@@ -59,272 +53,198 @@
         </div>
       </section>
 
-      <section class="occupation_area_section">
-        <h1 class="occupation_area_first_title">Por que nos escolher</h1>
-        <div class="occupation_area_areas">
-          <div class="benefit_one">
-            <h2 class="benefit_one_title">Soluções Sob Medida</h2>
-            <p class="benefit_one_text">
+      <section>
+        <h2>Por que nos escolher</h2>
+
+        <span>
+          <div>
+            <h3>Soluções Sob Medida</h3>
+            <p>
               Oferecemos soluções tecnológicas personalizadas para atender às
               necessidades exclusivas de cada cliente, garantindo resultados
               precisos e eficientes.
             </p>
           </div>
-          <div class="benefit_two">
-            <h2 class="benefit_two_title">Tecnologia de Ponta</h2>
-            <p class="benefit_two_text">
+          <div>
+            <h3>Tecnologia de Ponta</h3>
+            <p>
               Estamos na vanguarda da tecnologia, incorporando constantemente
               inteligência artificial, realidade aumentada e outras tecnologias
               emergentes em nossos projetos para proporcionar experiências
               excepcionais aos nossos clientes.
             </p>
           </div>
-          <div class="benefit_three">
-            <h2 class="benefit_three_title">Inovação Ágil</h2>
-            <p class="benefit_three_text">
+          <div>
+            <h3>Inovação Ágil</h3>
+            <p>
               Utilizamos uma abordagem ágil para desenvolver projetos
               inovadores, permitindo adaptações rápidas e eficazes às mudanças
               do mercado, mantendo sua empresa à frente da concorrência.
             </p>
           </div>
-        </div>
-        <div class="occupation_area_trusted_by">
-          <h2 class="occupation_area_second_title">
-            Alguns dos parceiros da TechNova
-          </h2>
-          <div class="trusted_by_companies">
-            <img src="./assets/imgs/Webfashion.svg" alt="Logo da Webfashion" />
-            <img
-              src="./assets/imgs/Smartkitchen.svg"
-              alt="Logo da Smartkitchen"
-            />
-            <img
-              src="./assets/imgs/futurefitness.svg"
-              alt="Logo da Future Fitness"
-            />
-            <img src="./assets/imgs/ecoharmony.svg" alt="Logo da Eco Harmony" />
-            <img
-              src="./assets/imgs/gadgetsrus.svg"
-              alt="Logo da Gadgets R Us"
-            />
-          </div>
-        </div>
+        </span>
       </section>
 
-      <section class="mid_text_section">
-        <p class="mid_text">
+      <section>
+        <h2>Alguns dos parceiros da TechNova</h2>
+
+        <div>
+          <img src="./assets/imgs/Webfashion.svg" alt="Logo da Webfashion" />
+          <img src="./assets/imgs/Smartkitchen.svg" alt="Logo da Smartkitchen" />
+          <img src="./assets/imgs/futurefitness.svg" alt="Logo da Future Fitness" />
+          <img src="./assets/imgs/ecoharmony.svg" alt="Logo da Eco Harmony" />
+          <img src="./assets/imgs/gadgetsrus.svg" alt="Logo da Gadgets R Us" />
+        </div>
+
+      </section>
+
+      <section>
+        <p>
           Impulsionando possibilidades através de soluções tecnológicas
           inovadoras, moldando um futuro digital mais brilhante para todos.
         </p>
       </section>
 
-      <section class="our_services_section">
-        <h2 class="our_services_title">Nossos Serviços</h2>
-        <div class="our_services_content">
-          <div class="our_services_boxes">
-            <div class="box_one">
-              <img
-                src="./assets/imgs/lampada.png"
-                class="img_box_one"
-                alt="Imagem do serviço de Consultoria"
-              />
-              <h3>Consultoria</h3>
+      <section>
+        <h2>Nossos Serviços</h2>
+        
+        <span>
+          <div class="services-cards">
+            <div class="card">
+              <img src="./assets/imgs/lampada.svg" alt="Ícone de uma lâmpada">
+              <h4>Consultoria</h4>
               <p>
-                Orientação estratégica para incorporar as últimas tendências
-                tecnológicas em sua empresa.
+                Orientação estratégica para incorporar as últimas tendências tecnológicas em sua empresa.
               </p>
             </div>
-            <div class="box_two">
-              <img
-                src="./assets/imgs/cerebroia.svg"
-                alt="Imagem do serviço de Uso de I.A."
-              />
-              <h3>Uso de I.A.</h3>
+            <div class="card">
+              <img src="./assets/imgs/cerebroia.svg" alt="Ícone de um cerebro com um processador">
+              <h4>Uso de I.A.</h4>
               <p>
-                Maximizamos a eficiência operacional através da automação
-                inteligente e da análise de dados.
+                Maximizamos a eficiência operacional através da automação inteligente e da análise de dados.
               </p>
             </div>
-            <div class="box_three">
-              <img
-                src="./assets/imgs/controle.svg"
-                alt="Imagem do serviço de Desenvolvimento"
-              />
-              <h3>Desenvolvimento</h3>
+            <div class="card">
+              <img src="./assets/imgs/controle.svg" alt="Ícone de um controle de vídeo game">
+              <h4>Desenvolvimento</h4>
               <p>
-                Criamos experiências imersivas e envolventes para entreter e
-                engajar seu público.
+                Criamos experiências imersivas e envolventes para entreter e engajar seu público.
               </p>
             </div>
-            <div class="box_four">
-              <img
-                src="./assets/imgs/ra.svg"
-                alt="Imagem do serviço de R.A. em projetos"
-              />
-              <h3>R.A. em projetos</h3>
+            <div class="card">
+              <img src="./assets/imgs/ra.svg" alt="Ícone de um ôculos de realidade aumentada">
+              <h4>R.A. em projetos</h4>
               <p>
-                Use Realidade Aumentada e atraia seus clientes com interações
-                digitais inovadoras e envolventes.
+                Use Realidade Aumentada e atraia seus clientes com interações digitais inovadoras e envolventes
               </p>
             </div>
           </div>
-          <div class="our_services_explain">
-            <p class="our_services_explain_text">
-              Na TechNova Solutions, oferecemos um universo de possibilidades
-              tecnológicas. Desde o desenvolvimento de aplicativos móveis e
-              sistemas web personalizados até a implementação de inteligência
-              artificial e realidade aumentada, estamos aqui para transformar
-              suas ideias em realidade digital. Com uma equipe dedicada e
-              experiente, podemos ajudar sua empresa a inovar, crescer e se
-              destacar no mercado digital. Descubra como podemos impulsionar o
-              seu sucesso hoje mesmo.
+
+          <div class="services-paragraph">
+            <p>
+              Na TechNova Solutions, oferecemos um universo de possibilidades tecnológicas. Desde o desenvolvimento de aplicativos móveis e sistemas web personalizados até a implementação de inteligência artificial e realidade aumentada, estamos aqui para transformar suas ideias em realidade digital. Com uma equipe dedicada e experiente, podemos ajudar sua empresa a inovar, crescer e se destacar no mercado digital. Descubra como podemos impulsionar o seu sucesso hoje mesmo.
             </p>
-            <button class="our_services_explain_button">Ver mais</button>
+            <button class="services-button">Ver mais</button>
           </div>
-        </div>
+        </span>
       </section>
 
-      <section class="why_choose_us_section">
-        <div class="why_choose_us">
-          <div class="why_choose_us_header">
-            <h1 class="why_choose_us_title">Atendimento único</h1>
-            <p class="why_choose_us_text">
-              O melhor que nossa empresa tem a oferecer para os clientes.
+      <section>
+        <span>
+          <h2>Atendimento único</h2>
+          <p>
+            O melhor que nossa empresa tem a oferece para os clientes.
+          </p>
+        </span>
+
+        <span>
+          <div class="treatments_paragraphs">
+
+            <div>
+              <h3>Abordagem Personalizada</h3>
+              <p>
+                Na TechNova Solutions, cada cliente é único. Nossa equipe se dedica a compreender profundamente as necessidades e objetivos de cada projeto, oferecendo soluções personalizadas e adaptadas às suas demandas específicas.
+              </p>
+            </div>
+            <div>
+              <h3>Suporte Contínuo</h3>
+              <p>
+                Além de desenvolver soluções tecnológicas inovadoras, nos comprometemos a oferecer suporte contínuo ao longo de todo o ciclo de vida do projeto. Estamos sempre disponíveis para responder a perguntas, fornecer atualizações e garantir que sua experiência conosco seja impecável.
+              </p>
+            </div>
+            <div>
+              <h3>Parceria de Longo Prazo</h3>
+              <p>
+                Valorizamos relacionamentos de longo prazo com nossos clientes. Não apenas entregamos um projeto e seguimos em frente, mas buscamos estabelecer parcerias duradouras, trabalhando lado a lado para impulsionar o crescimento e o sucesso de sua empresa no mundo digital.
+              </p>
+            </div>
+
+          </div>
+
+          <div>
+            <img src="./assets/imgs/aroundTable.png" alt="Pessoas sentadas ao redor de uma mesa">
+          </div>
+
+        </span>
+      </section>
+
+      <section>
+        <h2>Avaliações de alguns clientes</h2>
+
+        <span>
+          <div class="reviews_container">
+            <img src="./assets/imgs/stars.svg" alt="ícone 5 estrelas">
+            <p class="reviews_paragraph">
+              A TechNova Solutions superou todas as minhas expectativas! Sua equipe foi incrivelmente atenciosa desde o primeiro contato até a entrega final do projeto. Eles entenderam perfeitamente as necessidades da minha empresa e desenvolveram uma solução personalizada que impulsionou significativamente nosso sucesso. Recomendo-os sem hesitação!
             </p>
-          </div>
-
-          <div class="why_choose_us_benefits">
-            <div class="why_choose_us_benefits_texts">
-              <div class="why_choose_us_benefit_div">
-                <h2>Abordagem Personalizada</h2>
+            <div class="reviews_infos">
+              <img src="./assets/imgs/Avatar1.png" alt="Avatar de cliente">
+              <div class="reviews_text">
+                <h5>Jennifer Corkery</h5>
                 <p>
-                  Na TechNova Solutions, cada cliente é único. Nossa equipe se
-                  dedica a compreender profundamente as necessidades e objetivos
-                  de cada projeto, oferecendo soluções personalizadas e
-                  adaptadas às suas demandas específicas.
-                </p>
-              </div>
-
-              <div class="why_choose_us_benefit_div">
-                <h2>Suporte Contínuo</h2>
-                <p>
-                  Além de desenvolver soluções tecnológicas inovadoras, nos
-                  comprometemos a oferecer suporte contínuo ao longo de todo o
-                  ciclo de vida do projeto. Estamos sempre disponíveis para
-                  responder a perguntas, fornecer atualizações e garantir que
-                  sua experiência conosco seja impecável.
-                </p>
-              </div>
-
-              <div class="why_choose_us_benefit_div">
-                <h2>Parceria de Longo Prazo</h2>
-                <p>
-                  Valorizamos relacionamentos de longo prazo com nossos
-                  clientes. Não apenas entregamos um projeto e seguimos em
-                  frente, mas buscamos estabelecer parcerias duradouras,
-                  trabalhando lado a lado para impulsionar o crescimento e o
-                  sucesso de sua empresa no mundo digital.
+                  Yost - Metz
                 </p>
               </div>
             </div>
-            <img
-              class="img_around_table"
-              src="./assets/imgs/aroundTable.png"
-              alt="Imagem de uma mesa redonda"
-            />
           </div>
-        </div>
+          
+          <div class="reviews_container">
+            <img src="./assets/imgs/stars.svg" alt="ícone 5 estrelas">
+            <p class="reviews_paragraph">
+              Trabalhar com a TechNova Solutions foi uma experiência excepcional. Sua abordagem ágil e focada no cliente tornou todo o processo de desenvolvimento de software suave e eficiente. Além disso, o suporte contínuo que recebemos após a conclusão do projeto mostrou que eles realmente se preocupam com o sucesso de seus clientes. Mal posso esperar para colaborar com eles novamente!
+            </p>
+            <div class="reviews_infos">
+              <img src="./assets/imgs/Avatar2.png" alt="Avatar de cliente">
+              <div class="reviews_text">
+                <h5>Ms. Jerry Block</h5>
+                <p>
+                  Koepp, Windler and Beatty
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews_container">
+            <img src="./assets/imgs/stars.svg" alt="ícone 5 estrelas">
+            <p class="reviews_paragraph">
+              Não poderia estar mais satisfeito com o serviço prestado pela TechNova Solutions. Desde o início, eles demonstraram um profissionalismo exemplar e uma habilidade impressionante em transformar minhas ideias em realidade digital. Se você está procurando uma empresa de desenvolvimento de software confiável e inovadora, não procure mais do que a TechNova Solutions.
+            </p>
+            <div class="reviews_infos">
+              <img src="./assets/imgs/Avatar3.png" alt="Avatar de cliente">
+              <div class="reviews_text">
+                <h5>Ms. Mathew Heidenreich</h5>
+                <p>
+                  Schmeler and Sons
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </span>
       </section>
 
-      <section class="customer_testimonials_section">
-        <h2 class="testimonials_title">Avaliações de alguns clientes</h2>
-        <div class="customer_testimonials_div">
-          <div class="testimonials_text">
-            <div class="text_one">
-              <img
-                class="star1"
-                src="./assets/imgs/Stars.svg"
-                alt="Avaliação 5 estrelas"
-              />
-              <p>
-                A TechNova Solutions superou todas as minhas expectativas! Sua
-                equipe foi incrivelmente atenciosa desde o primeiro contato até
-                a entrega final do projeto. Eles entenderam perfeitamente as
-                necessidades da minha empresa e desenvolveram uma solução
-                personalizada que impulsionou significativamente nosso sucesso.
-                Recomendo-os sem hesitação!
-              </p>
-              <div class="customer_one">
-                <img
-                  class="customer_one_img"
-                  src="./assets/imgs/costumer1.svg"
-                  alt="Imagem do cliente Jennifer Corkery"
-                />
-                <div class="customer_one_info">
-                  <p class="customer_one_name">Jennifer Corkery</p>
-                  <p class="customer_one_company">Position, Company name</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="text_two">
-              <img
-                class="star1"
-                src="./assets/imgs/Stars.svg"
-                alt="Avaliação 5 estrelas"
-              />
-              <p>
-                Trabalhar com a TechNova Solutions foi uma experiência
-                excepcional. Sua abordagem ágil e focada no cliente tornou todo
-                o processo de desenvolvimento de software suave e eficiente.
-                Além disso, o suporte contínuo que recebemos após a conclusão do
-                projeto mostrou que eles realmente se preocupam com o sucesso de
-                seus clientes. Mal posso esperar para colaborar com eles
-                novamente!
-              </p>
-              <div class="customer_two">
-                <img
-                  class="customer_two_img"
-                  src="./assets/imgs/costumer2.svg"
-                  alt="Imagem do cliente Frank Ritchie PhD"
-                />
-                <div class="customer_two_info">
-                  <p class="customer_two_name">Frank Ritchie PhD</p>
-                  <p class="customer_two_company">Position, Company name</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="text_three">
-              <img
-                class="star1"
-                src="./assets/imgs/Stars.svg"
-                alt="Avaliação 5 estrelas"
-              />
-              <p>
-                Não poderia estar mais satisfeito com o serviço prestado pela
-                TechNova Solutions. Desde o início, eles demonstraram um
-                profissionalismo exemplar e uma habilidade impressionante em
-                transformar minhas ideias em realidade digital. Se você está
-                procurando uma empresa de desenvolvimento de software confiável
-                e inovadora, não procure mais do que a TechNova Solutions.
-              </p>
-              <div class="customer_three">
-                <img
-                  class="customer_three_img"
-                  src="./assets/imgs/costumer3.svg"
-                  alt="Imagem do cliente Christie O'Kon"
-                />
-                <div class="customer_three_info">
-                  <p class="customer_three_name">Christie O'Kon</p>
-                  <p class="customer_three_company">Position, Company name</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
+
     <footer>
       <section>
         <img class="logo-footer" src="./assets/imgs/logo_header.svg" alt="Logo da TechNova Solutions" />

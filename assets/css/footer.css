@@ -5,13 +5,17 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 80px;
+  bottom: 0px;
+
   section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .logo-footer {
       padding: 0px 46px;
     }
+
     nav:nth-of-type(1) {
       display: flex;
       gap: 32px;
@@ -23,20 +27,24 @@ footer {
       -webkit-text-fill-color: transparent;
       border: none;
     }
+
     nav:nth-of-type(2) {
       display: flex;
       gap: 12px;
     }
   }
+
   div {
     display: flex;
     flex-direction: column;
     gap: 32px;
+
     hr {
       background-color: var(--brand_primary_700_original);
       height: 1px;
       border: none;
     }
+
     p {
       color: var(--gray_scale_50);
       text-align: center;
