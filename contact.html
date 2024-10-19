@@ -4,6 +4,7 @@
     <title>Contato</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/imgs/logo_header.svg" type="image/x-icon">
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,20 +23,14 @@
   <body>
 
     <header>
-      <img src="./assets/imgs/logo_preto_nav.svg" alt="Logo da TechNova Solutions" />
+      <a href="index.html" tabindex="0"><img src="./assets/imgs/logo_preto_nav.svg" alt="Logo da TechNova Solutions" /></a>
 
       <nav>
-        <a href="./index.html">
-          <p>Início</p>
-        </a>
-        <a href="./contact.html">
-          <p>Contato</p>
-        </a>
-        <a href="./aboutUs.html">
-          <p>Sobre nós</p>
-        </a>
+        <a href="./index.html" tabindex="1"><p>Início</p></a>
+        <a href="./contact.html" tabindex="2"><p>Contato</p></a>
+        <a href="./aboutUs.html" tabindex="3"><p>Sobre nós</p></a>
         <div>
-          <select name="select_language" id="select-language">
+          <select name="select_language" id="select-language" tabindex="4">
             <option value="PT-BR">PT</option>
             <option value="EN">EN</option>
           </select>
@@ -47,9 +42,9 @@
 
     <main>
       <section>
-        <a href="index.html">Início</a>
+        <a href="index.html" tabindex="5">Início</a>
         <img src="./assets/imgs/seta.svg" alt="">
-        <a href="">Trabalhe conosco</a>
+        <a href="" tabindex="6">Trabalhe conosco</a>
       </section>
 
       <section>
@@ -58,19 +53,19 @@
           <form action="#" method="post">
             <div class="form_input">
               <label for="email">Email</label>
-              <input class="input_basic" type="email" id="email" name="email" placeholder="Digite seu email" required />
+              <input class="input_basic" type="email" id="email" name="email" placeholder="Digite seu email" required tabindex="7" />
             </div>
 
             <div class="form_input">
               <label for="telefone">Número de telefone</label>
-              <input class="input_basic" type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" required />
+              <input class="input_basic" type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" required tabindex="8" />
             </div>
 
             <div class="form_input">
               <label for="mensagem">Mensagem</label>
-              <textarea class="input_message" id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+              <textarea class="input_message" id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required tabindex="9"></textarea>
             </div>
-            <input class="button" type="submit" value="Enviar" />
+            <input class="button" type="submit" value="Enviar" tabindex="10"/>
           </form>
         </span>
 
@@ -96,16 +91,16 @@
       <section>
         <img class="logo-footer" src="./assets/imgs/logo_header.svg" alt="Logo da TechNova Solutions" />
         <nav>
-          <a href="./privacy-services.html">Termos de serviço</a>
-          <a href="./privacy-services.html">Politíca de privacidade</a>
-          <a href="./work_with_us.html">Trabalhe conosco</a>
+          <a href="./privacy-services.html" tabindex="11">Termos de serviço</a>
+          <a href="./privacy-services.html" tabindex="12">Politíca de privacidade</a>
+          <a href="./work_with_us.html" tabindex="13">Trabalhe conosco</a>
         </nav>
         <nav>
-          <a href="www.facebook.com"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook" /></a>
-          <a href="www.instagram.com"><img src="./assets/imgs/insta_icon.svg" alt="Instagram" /></a>
-          <a href="www.twitter.com"><img src="./assets/imgs/x_icon.svg" alt="Twitter" /></a>
-          <a href="www.linkedin.com"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn" /></a>
-          <a href="www.youtube.com"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube" /></a>
+          <a href="www.facebook.com" tabindex="14"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook" /></a>
+          <a href="www.instagram.com" tabindex="15"><img src="./assets/imgs/insta_icon.svg" alt="Instagram" /></a>
+          <a href="www.twitter.com" tabindex="16"><img src="./assets/imgs/x_icon.svg" alt="Twitter" /></a>
+          <a href="www.linkedin.com" tabindex="17"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn" /></a>
+          <a href="www.youtube.com" tabindex="18"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube" /></a>
         </nav>
       </section>
       <div>

@@ -61,12 +61,14 @@ main {
             padding: 16px 32px;
             width: 100%;
 
-            p {
+            button {
                 cursor: pointer;
                 background: var(--gradient-primarycolor-greatersecondarycolor);
                 background-clip: text;
                 -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;  
+                -webkit-text-fill-color: transparent;
+                font: var(--headline-headline-sm);  
+                border: none;
             }
 
             div {

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <title>Landing Page Institucional</title>
+    <title>TechNova Solutions</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/imgs/logo_header.svg" type="image/x-icon">
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,19 +18,25 @@
     <link rel="stylesheet" href="./assets/css/header-transparent.css" />
     <link rel="stylesheet" href="./assets/css/index/style.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/index/animations.css">
+
+    <!-- Scripts -->
+    <script src="./assets/js/translate.js" defer></script>  
+    <script src="./assets/js/animation.js" defer></script>
+    <script src="./assets/js/ourServices.js" defer></script>
   </head>
   
   <body>
 
     <header>
-      <img src="./assets/imgs/logo_branco_nav.svg" alt="Logo da TechNova Solutions" />
+      <a href="index.html" tabindex="0"><img src="./assets/imgs/logo_branco_nav.svg" alt="Logo da TechNova Solutions" /></a>
 
       <nav>
-        <a href="./index.html"><p>Início</p></a>
-        <a href="./contact.html"><p>Contato</p></a>
-        <a href="./aboutUs.html"><p>Sobre nós</p></a>
+        <a href="./index.html" tabindex="1"><p>Início</p></a>
+        <a href="./contact.html" tabindex="2"><p>Contato</p></a>
+        <a href="./aboutUs.html" tabindex="3"><p>Sobre nós</p></a>
         <div>
-          <select name="select_language" id="select-language">
+          <select name="select_language" id="select-language" tabindex="4">
             <option value="PT-BR">PT</option>
             <option value="EN">EN</option>
           </select>
@@ -42,8 +49,8 @@
     <main>
       
       <section>
-        <img src="./assets/imgs/hero_test.png" alt="Banner"/>
-        <div>
+        <img src="./assets/imgs/hero_background.png" alt="Banner"/>
+        <div class="hidden">
           <h1>TechNova Solutions</h1>
           <p>
             Transformando ideias em realidade digital. Desenvolvimento de
@@ -54,10 +61,10 @@
       </section>
 
       <section>
-        <h2>Por que nos escolher</h2>
+        <h2 class="hidden">Por que nos escolher</h2>
 
         <span>
-          <div>
+          <div class="hidden">
             <h3>Soluções Sob Medida</h3>
             <p>
               Oferecemos soluções tecnológicas personalizadas para atender às
@@ -65,7 +72,8 @@
               precisos e eficientes.
             </p>
           </div>
-          <div>
+
+          <div class="hidden">
             <h3>Tecnologia de Ponta</h3>
             <p>
               Estamos na vanguarda da tecnologia, incorporando constantemente
@@ -74,7 +82,8 @@
               excepcionais aos nossos clientes.
             </p>
           </div>
-          <div>
+
+          <div class="hidden">
             <h3>Inovação Ágil</h3>
             <p>
               Utilizamos uma abordagem ágil para desenvolver projetos
@@ -86,52 +95,52 @@
       </section>
 
       <section>
-        <h2>Alguns dos parceiros da TechNova</h2>
+        <h2 class="hidden">Alguns dos parceiros da TechNova</h2>
 
         <div>
-          <img src="./assets/imgs/Webfashion.svg" alt="Logo da Webfashion" />
-          <img src="./assets/imgs/Smartkitchen.svg" alt="Logo da Smartkitchen" />
-          <img src="./assets/imgs/futurefitness.svg" alt="Logo da Future Fitness" />
-          <img src="./assets/imgs/ecoharmony.svg" alt="Logo da Eco Harmony" />
-          <img src="./assets/imgs/gadgetsrus.svg" alt="Logo da Gadgets R Us" />
+          <img src="./assets/imgs/Webfashion.svg" alt="Logo da Webfashion" class="hidden"/>
+          <img src="./assets/imgs/Smartkitchen.svg" alt="Logo da Smartkitchen" class="hidden"/>
+          <img src="./assets/imgs/futurefitness.svg" alt="Logo da Future Fitness" class="hidden"/>
+          <img src="./assets/imgs/ecoharmony.svg" alt="Logo da Eco Harmony" class="hidden"/>
+          <img src="./assets/imgs/gadgetsrus.svg" alt="Logo da Gadgets R Us" class="hidden"/>
         </div>
 
       </section>
 
       <section>
-        <p>
+        <p class="hidden">
           Impulsionando possibilidades através de soluções tecnológicas
           inovadoras, moldando um futuro digital mais brilhante para todos.
         </p>
       </section>
 
       <section>
-        <h2>Nossos Serviços</h2>
+        <h2 class="hidden">Nossos Serviços</h2>
         
-        <span>
+        <span class="our_services">
           <div class="services-cards">
-            <div class="card">
+            <div class="card hidden">
               <img src="./assets/imgs/lampada.svg" alt="Ícone de uma lâmpada">
               <h4>Consultoria</h4>
               <p>
                 Orientação estratégica para incorporar as últimas tendências tecnológicas em sua empresa.
               </p>
             </div>
-            <div class="card">
+            <div class="card hidden">
               <img src="./assets/imgs/cerebroia.svg" alt="Ícone de um cerebro com um processador">
               <h4>Uso de I.A.</h4>
               <p>
                 Maximizamos a eficiência operacional através da automação inteligente e da análise de dados.
               </p>
             </div>
-            <div class="card">
+            <div class="card hidden">
               <img src="./assets/imgs/controle.svg" alt="Ícone de um controle de vídeo game">
               <h4>Desenvolvimento</h4>
               <p>
                 Criamos experiências imersivas e envolventes para entreter e engajar seu público.
               </p>
             </div>
-            <div class="card">
+            <div class="card hidden">
               <img src="./assets/imgs/ra.svg" alt="Ícone de um ôculos de realidade aumentada">
               <h4>R.A. em projetos</h4>
               <p>
@@ -141,18 +150,93 @@
           </div>
 
           <div class="services-paragraph">
-            <p>
+            <p class="hidden">
               Na TechNova Solutions, oferecemos um universo de possibilidades tecnológicas. Desde o desenvolvimento de aplicativos móveis e sistemas web personalizados até a implementação de inteligência artificial e realidade aumentada, estamos aqui para transformar suas ideias em realidade digital. Com uma equipe dedicada e experiente, podemos ajudar sua empresa a inovar, crescer e se destacar no mercado digital. Descubra como podemos impulsionar o seu sucesso hoje mesmo.
             </p>
-            <button class="services-button">Ver mais</button>
+            <button id="services-button-see_more" class="hidden" tabindex="5">Ver mais</button>
+          </div>
+        </span>
+
+        <span class="our_services_cards" hidden>
+            <div class="card-big hidden">
+              <img src="./assets/imgs/lampada.svg" alt="Ícone de uma lâmpada">
+              <h4>Consultoria em Tecnologia e Inovação</h4>
+              <p>
+                Oferecemos consultoria estratégica para integrar as últimas inovações tecnológicas no seu negócio. Ajudamos a identificar oportunidades de melhoria, implementar novas tecnologias e criar estratégias para manter sua empresa competitiva e atualizada com as tendências do setor.
+              </p>
+            </div>
+            <div class="card-big hidden">
+              <img src="./assets/imgs/cerebroia.svg" alt="Ícone de um cerebro com um processador">
+              <h4>Inteligência Artificial em Processos de Negócios</h4>
+              <p>
+                Maximize a eficiência e a precisão dos seus processos de negócios com soluções de inteligência artificial. Automatizamos tarefas, analisamos grandes volumes de dados e melhoramos a tomada de decisões, permitindo que sua empresa opere com mais inteligência e agilidade.
+              </p>
+            </div>
+            <div class="card-big hidden">
+              <img src="./assets/imgs/controle.svg" alt="Ícone de um controle de vídeo game">
+              <h4>Desenvolvimento de Jogos Digitais</h4>
+              <p>
+                Criamos jogos digitais envolventes e imersivos que capturam a atenção e o interesse dos usuários. Desde jogos para entretenimento até soluções educacionais, nosso desenvolvimento é focado em experiências ricas e interativas com narrativas cativantes.
+              </p>
+            </div>
+            <div class="card-big hidden">
+              <img src="./assets/imgs/ra.svg" alt="Ícone de um ôculos de realidade virtual">
+              <h4>Aplicativos de Realidade Virtual para Simulação</h4>
+              <p>
+                Proporcionamos treinamento eficaz e simulações realistas com aplicativos de realidade virtual. Nossas soluções permitem que seus colaboradores experimentem cenários de treinamento imersivos, melhorando a retenção de conhecimento e a aplicação prática das habilidades aprendidas.
+              </p>
+            </div>
+            <div class="card-big hidden">
+              <img src="./assets/imgs/realidadeaumentada.svg" alt="Ícone de uma tela simulando realidade aumentada">
+              <h4>Realidade Aumentada em Experiências de Marketing</h4>
+              <p>
+                Envolva seus clientes com campanhas de marketing inovadoras que utilizam realidade aumentada. Criamos experiências interativas que capturam a atenção e proporcionam uma imersão única, elevando a percepção da sua marca e promovendo um engajamento mais profundo com seu público.
+              </p>
+            </div>
+            <div class="card-big hidden">
+              <img src="./assets/imgs/pc.svg" alt="Ícone de um monitor de computador">
+              <h4>Criação de Sistemas Web Personalizados</h4>
+              <p>
+                Desenvolvemos sistemas web sob medida para atender às demandas específicas do seu negócio. Desde plataformas de gestão a soluções de CRM e sistemas de e-commerce, entregamos ferramentas robustas e adaptadas às suas necessidades, com um design intuitivo e funcionalidades avançadas.
+              </p>
+            </div>
+            <div class="card-big hidden">
+              <img src="./assets/imgs/mobile.svg" alt="Ícone de um celular">
+              <h4>Desenvolvimento de Aplicativos Móveis</h4>
+              <p>
+                Transformamos suas ideias em aplicativos móveis altamente funcionais e intuitivos, projetados para oferecer a melhor experiência ao usuário. Nossa equipe desenvolve soluções para iOS e Android, garantindo que seu aplicativo atenda às necessidades do seu público e se destaque no mercado.
+              </p>
+            </div>
+            <div class="card-big hidden">
+              <img src="./assets/imgs/chatbot.svg" alt="Ícone de um chatbot">
+              <h4>Desenvolvimento de Chatbots</h4>
+              <p>
+                Melhore o atendimento ao cliente e a eficiência operacional com chatbots e assistentes virtuais inteligentes. Nossas soluções automatizam interações, respondem a perguntas frequentes e realizam tarefas básicas, proporcionando suporte contínuo e eficaz para seus usuários.
+              </p>
+            </div>
+            <div class="card-big hidden">
+              <img src="./assets/imgs/cart.svg" alt="Ícone de um carrinho de compras">
+              <h4>Desenvolvimento de Soluções de E-commerce</h4>
+              <p>
+                Potencialize suas vendas online com plataformas de e-commerce desenvolvidas para atender às necessidades do seu negócio. Criamos lojas virtuais seguras, escaláveis e com design atraente, oferecendo uma experiência de compra fluida e atraente para seus clientes.
+              </p>
+            </div>
+            <div class="card-big hidden">
+              <img src="./assets/imgs/blockEngine.svg" alt="Ícone de um quadrado com várias engrenagens representando desenvolvimento">
+              <h4>Desenvolvimento de Software(ERP)</h4>
+              <p>
+                Simplificamos a gestão empresarial com software ERP personalizado, projetado para integrar e automatizar todos os aspectos do seu negócio. Desde a contabilidade até o gerenciamento de estoque e recursos humanos, nossas soluções ajudam a otimizar operações e melhorar a eficiência.
+              </p>
+            </div>
+            <button id="services-button-see_less" class="hidden" tabindex="5">Ver menos</button>
           </div>
         </span>
       </section>
 
       <section>
         <span>
-          <h2>Atendimento único</h2>
-          <p>
+          <h2 class="hidden">Atendimento único</h2>
+          <p class="hidden">
             O melhor que nossa empresa tem a oferece para os clientes.
           </p>
         </span>
@@ -160,19 +244,19 @@
         <span>
           <div class="treatments_paragraphs">
 
-            <div>
+            <div class="hidden">
               <h3>Abordagem Personalizada</h3>
               <p>
                 Na TechNova Solutions, cada cliente é único. Nossa equipe se dedica a compreender profundamente as necessidades e objetivos de cada projeto, oferecendo soluções personalizadas e adaptadas às suas demandas específicas.
               </p>
             </div>
-            <div>
+            <div class="hidden">
               <h3>Suporte Contínuo</h3>
               <p>
                 Além de desenvolver soluções tecnológicas inovadoras, nos comprometemos a oferecer suporte contínuo ao longo de todo o ciclo de vida do projeto. Estamos sempre disponíveis para responder a perguntas, fornecer atualizações e garantir que sua experiência conosco seja impecável.
               </p>
             </div>
-            <div>
+            <div class="hidden">
               <h3>Parceria de Longo Prazo</h3>
               <p>
                 Valorizamos relacionamentos de longo prazo com nossos clientes. Não apenas entregamos um projeto e seguimos em frente, mas buscamos estabelecer parcerias duradouras, trabalhando lado a lado para impulsionar o crescimento e o sucesso de sua empresa no mundo digital.
@@ -181,7 +265,7 @@
 
           </div>
 
-          <div>
+          <div class="hidden treatments_image">
             <img src="./assets/imgs/aroundTable.png" alt="Pessoas sentadas ao redor de uma mesa">
           </div>
 
@@ -189,10 +273,10 @@
       </section>
 
       <section>
-        <h2>Avaliações de alguns clientes</h2>
+        <h2 class="hidden">Avaliações de alguns clientes</h2>
 
         <span>
-          <div class="reviews_container">
+          <div class="reviews_container hidden">
             <img src="./assets/imgs/stars.svg" alt="ícone 5 estrelas">
             <p class="reviews_paragraph">
               A TechNova Solutions superou todas as minhas expectativas! Sua equipe foi incrivelmente atenciosa desde o primeiro contato até a entrega final do projeto. Eles entenderam perfeitamente as necessidades da minha empresa e desenvolveram uma solução personalizada que impulsionou significativamente nosso sucesso. Recomendo-os sem hesitação!
@@ -208,7 +292,7 @@
             </div>
           </div>
           
-          <div class="reviews_container">
+          <div class="reviews_container hidden">
             <img src="./assets/imgs/stars.svg" alt="ícone 5 estrelas">
             <p class="reviews_paragraph">
               Trabalhar com a TechNova Solutions foi uma experiência excepcional. Sua abordagem ágil e focada no cliente tornou todo o processo de desenvolvimento de software suave e eficiente. Além disso, o suporte contínuo que recebemos após a conclusão do projeto mostrou que eles realmente se preocupam com o sucesso de seus clientes. Mal posso esperar para colaborar com eles novamente!
@@ -224,7 +308,7 @@
             </div>
           </div>
 
-          <div class="reviews_container">
+          <div class="reviews_container hidden">
             <img src="./assets/imgs/stars.svg" alt="ícone 5 estrelas">
             <p class="reviews_paragraph">
               Não poderia estar mais satisfeito com o serviço prestado pela TechNova Solutions. Desde o início, eles demonstraram um profissionalismo exemplar e uma habilidade impressionante em transformar minhas ideias em realidade digital. Se você está procurando uma empresa de desenvolvimento de software confiável e inovadora, não procure mais do que a TechNova Solutions.
@@ -249,16 +333,16 @@
       <section>
         <img class="logo-footer" src="./assets/imgs/logo_header.svg" alt="Logo da TechNova Solutions" />
         <nav>
-          <a href="./privacy-services.html">Termos de serviço</a>
-          <a href="./privacy-services.html">Politíca de privacidade</a>
-          <a href="./work_with_us.html">Trabalhe conosco</a>
+          <a href="./privacy-services.html" tabindex="6">Termos de serviço</a>
+          <a href="./privacy-services.html" tabindex="7">Politíca de privacidade</a>
+          <a href="./work_with_us.html" tabindex="8">Trabalhe conosco</a>
         </nav>
         <nav>
-          <a href="www.facebook.com"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook"/></a>
-          <a href="www.instagram.com"><img src="./assets/imgs/insta_icon.svg" alt="Instagram"/></a>
-          <a href="www.twitter.com"><img src="./assets/imgs/x_icon.svg" alt="Twitter"/></a>
-          <a href="www.linkedin.com"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn"/></a>
-          <a href="www.youtube.com"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube"/></a>
+          <a href="www.facebook.com" tabindex="9"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook"/></a>
+          <a href="www.instagram.com" tabindex="10"><img src="./assets/imgs/insta_icon.svg" alt="Instagram"/></a>
+          <a href="www.twitter.com" tabindex="11"><img src="./assets/imgs/x_icon.svg" alt="Twitter"/></a>
+          <a href="www.linkedin.com" tabindex="12"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn"/></a>
+          <a href="www.youtube.com" tabindex="13"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube"/></a>
         </nav>
       </section>
       <div>
@@ -267,7 +351,5 @@
       </div>
     </footer>
 
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/translate.js"></script>  
   </body>
 </html>

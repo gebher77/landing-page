@@ -4,23 +4,28 @@
     <title>Sobre nós</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/imgs/logo_header.svg" type="image/x-icon">
     <link rel="stylesheet" href="/landing-page/assets/css/root.css" />
     <link rel="stylesheet" href="./assets/css/aboutUs/style.css">
     <link rel="stylesheet" href="./assets/css/header-transparent.css" />
     <link rel="stylesheet" href="./assets/css/footer.css"/>
+    <link rel="stylesheet" href="./assets/css/aboutUs/animations.css">
+
+    <script src="./assets/js/translate.js" defer></script>
+    <script src="./assets/js/animation.js" defer></script>
   </head>
 
   <body>
 
     <header>
-      <img src="./assets/imgs/logo_branco_nav.svg" alt="Logo da TechNova Solutions" />
+      <a href="index.html" tabindex="0"><img src="./assets/imgs/logo_branco_nav.svg" alt="Logo da TechNova Solutions" /></a>
 
       <nav>
-        <a href="./index.html"><p>Início</p></a>
-        <a href="./contact.html"><p>Contato</p></a>
-        <a href="./aboutUs.html"><p>Sobre nós</p></a>
+        <a href="./index.html" tabindex="1"><p>Início</p></a>
+        <a href="./contact.html" tabindex="2"><p>Contato</p></a>
+        <a href="./aboutUs.html" tabindex="3"><p>Sobre nós</p></a>
         <div>
-          <select name="select_language" id="select-language">
+          <select name="select_language" id="select-language" tabindex="4">
             <option value="PT-BR">PT</option>
             <option value="EN">EN</option>
           </select>
@@ -33,9 +38,9 @@
     <main>
 
       <section>
-        <img src="./assets/imgs/bannerAboutUs.png" alt="Banner"/>
+        <img src="./assets/imgs/bannerAboutUs.png" alt="Banner" />
 
-        <span>
+        <span class="hidden">
           <h1>Quem somos</h1>
           <p>
             Na TechNova Solutions, transformamos ideias em soluções digitais inovadoras. Nosso compromisso é desenvolver software personalizado e tecnologias de ponta para impulsionar o sucesso de nossos clientes em um mundo em constante evolução.
@@ -43,22 +48,22 @@
         </span>
 
         <span>
-          <p>Equipe</p>
+          <button tabindex="5">Equipe</button>
           <div></div>
-          <p>Valores</p>
+          <button tabindex="6">Valores</button>
           <div></div>
-          <p>Missão</p>
+          <button tabindex="7">Missão</button>
           <div></div>
-          <p>Abordagem</p>
+          <button tabindex="8">Abordagem</button>
           <div></div>
-          <p>Compromisso com a inovação</p>
+          <button tabindex="9">Compromisso com a inovação</button>
           <div></div>
-          <p>Tecnologias emergentes</p>
+          <button tabindex="10">Tecnologias emergentes</button>
         </span>
       </section>
 
       <section>
-        <span>
+        <span class="hidden">
           <h2>Nossa Equipe</h1>
           <p>
             Nossa equipe é composta por profissionais altamente qualificados e
@@ -71,15 +76,15 @@
           </p>
         </span>
 
-        <img src="./assets/imgs/our_team_image.png" alt="" />
+        <img src="./assets/imgs/our_team_image.png" alt="" class="hidden"/>
       </section>
 
-      <section>
+      <section class="hidden">
         <p><b>"</b>Inovação com Integridade, Resultados com Excelência.<b>"</b></p>
       </section>
 
       <section>
-        <span>
+        <span class="hidden">
           <h2>Nossa Missão</h1>
           <p>
             Na TechNova Solutions, nossa missão é capacitar empresas a alcançar
@@ -92,7 +97,7 @@
           </p>
         </span>
 
-        <span>
+        <span class="hidden">
           <h2>Nossos Valores</h2>
           <p>
             Acreditamos na importância de um trabalho ético, transparente e
@@ -107,9 +112,9 @@
       </section>
 
       <section>
-        <img src="./assets/imgs/unsplash_wxWulfjN-G0.png" alt="" />
+        <img src="./assets/imgs/unsplash_wxWulfjN-G0.png" alt="" class="hidden"/>
 
-        <span>
+        <span class="hidden">
           <h2>Nossa abordagem</h2>
           <p>
             Adotamos uma abordagem ágil em todos os nossos projetos, permitindo
@@ -128,7 +133,7 @@
         </span>
       </section>
 
-      <section>
+      <section class="hidden">
         <h2>Nosso Compromisso com a Inovação</h2>
         <p>
             A inovação está no coração da TechNova Solutions. Continuamente
@@ -142,7 +147,7 @@
       </section>
 
       <section>
-        <span>
+        <span class="hidden">
           <h2>Tecnologias Emergentes</h2>
           <p>
             Estamos sempre na vanguarda da tecnologia, incorporando as últimas
@@ -155,7 +160,7 @@
           </p>
         </span>
 
-        <img id="tec_emerges" data-en="./assets/imgs/tecnologias_en.svg" data-pt="./assets/imgs/tecnologias_pt.svg" src="./assets/imgs/tecnologias_pt.svg" alt="" />
+        <img id="tec_emerges" data-en="./assets/imgs/tecnologias_en.svg" data-pt="./assets/imgs/tecnologias_pt.svg" src="./assets/imgs/tecnologias_pt.svg" alt="" class="hidden"/>
       </section>
 
     </main>
@@ -169,11 +174,11 @@
           <a href="./work_with_us.html">Trabalhe conosco</a>
         </nav>
         <nav>
-          <a href="www.facebook.com"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook"/></a>
-          <a href="www.instagram.com"><img src="./assets/imgs/insta_icon.svg" alt="Instagram"/></a>
-          <a href="www.twitter.com"><img src="./assets/imgs/x_icon.svg" alt="Twitter"/></a>
-          <a href="www.linkedin.com"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn"/></a>
-          <a href="www.youtube.com"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube"/></a>
+          <a href="www.facebook.com" tabindex="11"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook"/></a>
+          <a href="www.instagram.com" tabindex="12"><img src="./assets/imgs/insta_icon.svg" alt="Instagram"/></a>
+          <a href="www.twitter.com" tabindex="13"><img src="./assets/imgs/x_icon.svg" alt="Twitter"/></a>
+          <a href="www.linkedin.com" tabindex="14"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn"/></a>
+          <a href="www.youtube.com" tabindex="15"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube"/></a>
         </nav>
       </section>
       <div>
@@ -181,8 +186,6 @@
         <p>Copyright &copy 2024 Empresa. Todos os direitos reservados.</p>
       </div>
     </footer>
-
-    <script src="./assets/js/translate.js"></script>
 
   </body>
 </html>

@@ -3,8 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-ol,
-ul {
+
+*:focus-visible {
+  outline: 3px solid var(--brand_secondary_500_original);
+  border-radius: 8px;
+}
+
+ol, ul {
   list-style: none;
 }
 
@@ -13,42 +18,15 @@ ul {
 
   /* Gray scale */
   --gray_scale_50: #f6f6f6;
-  --gray_scale_100: #e7e7e7;
-  --gray_scale_200: #d1d1d1;
-  --gray_scale_300: #b0b0b0;
-  --gray_scale_400: #888888;
-  --gray_scale_500: #6d6d6d;
-  --gray_scale_600: #5d5d5d;
-  --gray_scale_700: #4f4f4f;
-  --gray_scale_800: #454545;
-  --gray_scale_900: #3d3d3d;
   --gray_scale_950: #000000;
+  
   /* Brand-Primary */
-
-  --brand_primary_50: #faf4ff;
   --brand_primary_100: #f4e6ff;
-  --brand_primary_200: #ead2ff;
-  --brand_primary_300: #daaeff;
-  --brand_primary_400: #c47aff;
-  --brand_primary_500: #ad48ff;
-  --brand_primary_600: #9a24f9;
   --brand_primary_700_original: #8b15e7;
-  --brand_primary_800: #7016b3;
-  --brand_primary_900: #5c1390;
   --brand_primary_950: #3f006c;
 
   /* Brand-secondary */
-  --brand_secondary_50: #effef4;
-  --brand_secondary_100: #d9ffe7;
-  --brand_secondary_200: #b6fcd0;
-  --brand_secondary_300: #7cf9ac;
-  --brand_secondary_400: #3deb81;
   --brand_secondary_500_original: #15e768;
-  --brand_secondary_600: #09b04c;
-  --brand_secondary_700: #0b8a3e;
-  --brand_secondary_800: #0f6c35;
-  --brand_secondary_900: #0e592e;
-  --brand_secondary_950: #013216;
 
   /* GRADIENTS */
   --gradient-primarycolor-greatersecondarycolor: linear-gradient(
@@ -71,16 +49,10 @@ ul {
     rgba(21, 231, 104, 1) 0%,
     rgba(139, 21, 231, 1) 100%
   );
-  --gradient-purple950-greater-black950: linear-gradient(
-    -69.58deg,
-    rgba(63, 0, 108, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-
   --gradiente-destaque-diagonal-pretotoroxo: linear-gradient(
     290deg,
-    #3f006c 0%,
-    #000 100%
+    rgba(63, 0, 108, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
   );
   --gradiente-padrao-diagonal: linear-gradient(
     134.51deg,
@@ -90,7 +62,7 @@ ul {
   --gradiente-padrao-diagonal-roxo: linear-gradient(
     118.71deg,
     rgba(21, 231, 104, 1) 0%,
-    rgba(139, 21, 231, 1) 100%
+    rgba(139, 21, 231, 1) 65%
   );
   --gradiente-padrao-diagonal-verde: linear-gradient(
     117.75deg,
@@ -125,6 +97,8 @@ ul {
 
   /* Effects */
   --cards-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  --botao-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 7px 13px -3px rgba(0, 0, 0, 0.3), 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
 
   /*FONTS*/
 

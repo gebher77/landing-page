@@ -1,5 +1,5 @@
 html {
-  background: var(--gradient-purple950-greater-black950);
+  background: var(--gradiente-destaque-diagonal-pretotoroxo);
 }
 
 main {
@@ -57,6 +57,21 @@ main {
         border-radius: 8px;
         padding: 8px 20px;
         text-decoration: none;
+        box-shadow: var(--botao-box-shadow);
+        transition: background 0.5s linear;
+      }
+
+      a:hover {
+          background: var(--brand_primary_700_original);
+      }
+
+      a:active {
+          background: var(--brand_secondary_500_original);
+          box-shadow: none;
+      }
+
+      a:focus {
+          outline: 3px solid var(--brand_secondary_500_original);
       }
     }
   }

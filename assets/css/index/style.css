@@ -1,5 +1,6 @@
 html {
     background-color: var(--brand_primary_100);
+    overflow-x: hidden;
 }
 
 h2 {
@@ -8,6 +9,18 @@ h2 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
+}
+
+@keyframes pulsar {
+    0% {
+        filter: saturate(0);
+    }
+    50% {
+        filter: saturate(1);
+    }
+    100% {
+        filter: saturate(2);
+    }
 }
 
 main {
@@ -25,6 +38,7 @@ main {
             height: 100vh;
             position: relative;
             display: inline-block;
+            animation: pulsar 10s infinite alternate;
         }
         
         div {
@@ -99,7 +113,7 @@ main {
 
     /* Texto motivador */
     section:nth-of-type(4) {
-        background: var(--gradient-purple950-greater-black950);
+        background: var(--gradiente-destaque-diagonal-pretotoroxo);
         margin: 0;
         padding: 7% 5%;
         display: flex;
@@ -121,7 +135,11 @@ main {
         align-items: center;
         gap: 40px;
 
-        span {
+        span[hidden] {
+            display: none !important;
+          }
+
+        span:nth-of-type(1) {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -178,7 +196,81 @@ main {
                     color: var(--gray_scale_50);
                     border-radius: 8px;
                     padding: 9px 20px;
+                    box-shadow: var(--botao-box-shadow);
+                    transition: background 0.5s linear;
                 }
+
+                button:hover {
+                    background: var(--brand_primary_700_original);
+                }
+
+                button:active {
+                    background: var(--brand_secondary_500_original);
+                    box-shadow: none;
+                }
+
+                button:focus-visible {
+                    outline: 3px solid var(--brand_secondary_500_original);
+                }
+            }
+        }
+
+        span:nth-of-type(2) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 36px;
+
+            .card-big {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 24px;
+                background-color: var(--brand_primary_100);
+                box-shadow: var(--cards-box-shadow);
+                padding: 32px 24px;
+                height: 410px;
+                border-radius: 16px;
+
+                h4 {
+                    font: var(--headline-headline-xs);
+                    color: var(--gray_scale_950);
+                }
+                
+                p {
+                    font: var(--body-body-md);
+                    color: var(--gray_scale_950);
+                }
+            }
+
+            button {
+                cursor: pointer;
+                width: 80%;
+                height: 44px;
+                font: var(--headline-headline-xxs);
+                border: none;
+                background: var(--gradiente-padrao-diagonal);
+                color: var(--gray_scale_50);
+                border-radius: 8px;
+                padding: 9px 20px;
+                box-shadow: var(--botao-box-shadow);
+                transition: background 0.5s linear;
+                align-self: center;
+            }
+
+            button:hover {
+                background: var(--brand_primary_700_original);
+            }
+
+            button:active {
+                background: var(--brand_secondary_500_original);
+                box-shadow: none;
+            }
+
+            button:focus-visible {
+                outline: 3px solid var(--brand_secondary_500_original);
             }
         }
     }
