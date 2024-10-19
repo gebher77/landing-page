@@ -1,81 +1,107 @@
-// Substitua pela sua chave de API do Google Cloud Translate.
-const API_KEY = 'API KEY';
+let originalTexts = new Map(); // Armazena os textos originais usando Map
+const exceptions = ["TechNova Solutions"]; // Lista de textos que não devem ser traduzidos
 
-async function translateText(text, targetLanguage) {
-  const url = `https://translation.googleapis.com/language/translate/v2?key=${API_KEY}`;
-  const data = { q: text, target: targetLanguage };
-  
-  try {
+// Função para traduzir o HTML com base na linguagem selecionada
+async function translateHTML(lang) {
+    const textsToTranslate = [];
+    const elements = document.querySelectorAll('h1, h2, h3, h4, p, title, footer nav:first-of-type a, button, input[placeholder], main a');
+    const image = document.getElementById('tec_emerges'); // Seleciona a imagem para troca
+
+    elements.forEach(element => {
+        // Armazena o texto original se ainda não tiver sido armazenado
+        if (!originalTexts.has(element)) {
+            if (element.tagName === 'INPUT' && element.hasAttribute('placeholder')) {
+                originalTexts.set(element, element.getAttribute('placeholder')); // Armazena o placeholder
+            } else {
+                originalTexts.set(element, element.innerText); // Armazena o texto original
+            }
+        }
+
+        // Verifica se o texto atual está na lista de exceções
+        if (exceptions.includes(originalTexts.get(element))) {
+            return; // Não traduzir esse texto
+        }
+
+        // Adiciona o texto para tradução se não for uma exceção
+        textsToTranslate.push({
+            text: originalTexts.get(element),
+            element: element
+        });
+    });
+
+    if (lang === 'PT-BR') {
+        // Se a linguagem selecionada for português, restaura os textos originais
+        textsToTranslate.forEach(item => {
+            if (item.element.tagName === 'INPUT' && item.element.hasAttribute('placeholder')) {
+                item.element.setAttribute('placeholder', originalTexts.get(item.element)); // Restaura o placeholder
+            } else {
+                item.element.innerHTML = originalTexts.get(item.element); // Usa o texto original
+            }
+        });
+
+        // Restaura a imagem para a versão em português
+        image.src = image.getAttribute('data-pt'); // Troca para a versão em português
+    } else {
+        // Se a linguagem selecionada não for português, faz a tradução
+        const translatedTexts = await translateBatch(textsToTranslate, lang);
+        translatedTexts.forEach((translatedText, index) => {
+            if (textsToTranslate[index].element.tagName === 'INPUT' && textsToTranslate[index].element.hasAttribute('placeholder')) {
+                textsToTranslate[index].element.setAttribute('placeholder', translatedText); // Atualiza o placeholder
+            } else {
+                textsToTranslate[index].element.innerHTML = translatedText; // Atualiza apenas os textos
+            }
+        });
+
+        // Troca a imagem para a versão em inglês
+        image.src = image.getAttribute('data-en'); // Troca para a versão em inglês
+    }
+}
+
+// Função para traduzir um lote de textos
+async function translateBatch(texts, targetLanguage) {
+    const apiKey = "AIzaSyD0l2Bs24hsL4MXZtmwwVjRUAyb8qnLjgc"; // Substitua com sua chave API
+    const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
+    
+    const body = {
+        q: texts.map(t => t.text),
+        target: targetLanguage
+    };
+
     const response = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(body)
     });
     
-    const result = await response.json();
-    if (result.data && result.data.translations && result.data.translations.length > 0) {
-      return result.data.translations[0].translatedText;
-    } else {
-      console.error("Erro na resposta de tradução:", result);
-      return text;
+    if (!response.ok) {
+        const data = await response.json();
+        console.error('Erro na tradução:', data.error);
+        return [];
     }
-  } catch (error) {
-    console.error("Erro na requisição:", error);
-    return text;
-  }
+
+    const data = await response.json();
+    return data.data.translations.map(t => t.translatedText);
 }
 
-function decodeHTMLEntities(text) {
-  const textarea = document.createElement("textarea");
-  textarea.innerHTML = text;
-  return textarea.value;
+// Função para sanitizar o texto (opcional)
+function sanitizeText(text) {
+    return text; // Retorna o texto sem alterações
 }
 
-async function translateHTMLContent(targetLanguage) {
-  const elementsToTranslate = document.querySelectorAll(
-    'h1, h2, h3, p, span, a, label, input[type="submit"], button, input[placeholder], textarea[placeholder]'
-  );
+// Evento para mudar a linguagem
+document.getElementById('select-language').addEventListener('change', (event) => {
+    const selectedLang = event.target.value;
+    localStorage.setItem('selectedLanguage', selectedLang); // Armazena a linguagem no localStorage
+    translateHTML(selectedLang);
+});
 
-  const translationPromises = Array.from(elementsToTranslate).map(async (element) => {
-    const originalText = element.innerText || element.placeholder || element.value;
-    if (originalText && originalText.trim()) {
-      const translatedText = await translateText(originalText, targetLanguage);
-      const decodedText = decodeHTMLEntities(translatedText);
-      if (decodedText) {
-        if (element.tagName.toLowerCase() === "input" && element.type === "submit") {
-          element.value = decodedText;
-        } else if (element.tagName.toLowerCase() === "button") {
-          element.innerText = decodedText;
-        } else if (element.placeholder) {
-          element.placeholder = decodedText;
-        } else {
-          element.innerText = decodedText;
-        }
-      }
+// Ao carregar a página, verifica se há uma linguagem armazenada
+window.onload = () => {
+    const storedLang = localStorage.getItem('selectedLanguage');
+    if (storedLang) {
+        document.getElementById('select-language').value = storedLang; // Define a seleção do idioma
+        translateHTML(storedLang); // Traduz o conteúdo com a linguagem armazenada
     }
-  });
-
-  await Promise.all(translationPromises);
-}
-
-function updateImages(targetLanguage) {
-  const images = document.querySelectorAll("img[data-en]");
-  images.forEach((img) => {
-    const imageSrc =
-      targetLanguage === "en"
-        ? img.getAttribute("data-en")
-        : img.getAttribute("data-pt");
-    img.src = imageSrc;
-  });
-}
-
-function handleLanguageChange(event) {
-  const selectedLanguage = event.target.value;
-  let targetLanguage = selectedLanguage === "EN" ? "en" : "pt";
-  translateHTMLContent(targetLanguage);
-  updateImages(targetLanguage);
-}
-
-document
-  .getElementById("select-language")
-  .addEventListener("change", handleLanguageChange);
+};
