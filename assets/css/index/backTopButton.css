@@ -1,0 +1,75 @@
+#back-to-top {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 4.5rem;
+    border: none; /* sem borda */
+    padding: 1.5rem; /* espaçamento interno */
+    cursor: pointer; /* cursor em forma de mão */
+    background-image: url(/landing-page/assets/imgs/backTopButton.svg);
+    background-color: transparent;
+    background-size: cover;
+    display: none;
+}
+
+.backTopButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-selector {
+    position: fixed;
+    bottom: 3rem; /* Acima do botão de voltar ao topo */
+    right: 1px;
+    background-color: white; /* Fundo branco */
+}
+
+#section-selector ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 2rem; /* Remove o preenchimento */
+    gap: 4pt;
+}
+
+#section-selector {
+    background-color: transparent;
+}
+
+#section-selector ul li{
+    display: none;
+}
+
+
+li {
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    font: var(--headline-headline-xxs);
+    overflow: hidden; /* Para ocultar a parte do fundo que excede o contêiner */
+}
+
+li::before {
+    content: ''; /* Necessário para mostrar o pseudo-elemento */
+    position: absolute; /* Posicionamento absoluto em relação ao li */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black; /* Fundo preto */
+    z-index: 1; /* Garante que o fundo fique atrás do texto */
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block; /* Para garantir que o link ocupe o espaço do li */
+    position: relative; /* Necessário para que o texto fique acima do fundo */
+    z-index: 2; /* Garante que o texto fique acima do fundo */
+    background: var(--gradient-primarycolor-greatersecondarycolor);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 8rem;
+    line-height: 20px;
+}
