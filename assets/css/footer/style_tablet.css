@@ -1,0 +1,25 @@
+@media screen and (max-width: 835px) {
+    footer {
+        section:nth-of-type(1) {
+            justify-content: space-between;
+
+            .logo-footer {
+                padding: 0px;
+            }
+
+            nav:nth-of-type(1) {
+                a {
+                    background: var(--gradiente-padrao);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    border: none;
+                }
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+    }
+}

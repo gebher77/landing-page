@@ -9,17 +9,24 @@ header {
   width: 100%;
   z-index: 1;
 
+  a:nth-of-type(1) {
+    img:nth-of-type(1) {
+      display: none;
+    }
+  }
+
   nav {
     font: var(--headline-headline-xxs);
     display: flex;
     align-items: center;
     gap: 32px;
+    z-index: 11;
 
     a {
       text-decoration: none;
 
       p {
-        background: var(--gradient-primarycolor-greatersecondarycolor);
+        background: var(--gradiente-padrao);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -33,7 +40,7 @@ header {
       select {
         font: var(--headline-headline-xxs);
         text-decoration: none;
-        background: var(--gradient-primarycolor-greatersecondarycolor);
+        background: var(--gradiente-padrao);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -44,4 +51,8 @@ header {
       }
     }
   }
+}
+
+.menu-btn {
+  display: none;
 }

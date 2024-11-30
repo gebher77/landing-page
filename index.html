@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
   <head>
-    <title>TechNova Solutions</title>
+    <!-- Metadados do documento -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/imgs/logo_header.svg" type="image/x-icon">
 
-    <!-- Fontes -->
+    <!-- Título e favicon da página -->
+    <title>TechNova Solutions</title>
+    <link rel="shortcut icon" href="./assets/imgs/logo_header.svg" type="image/x-icon">
+    
+    <!-- Fontes externas -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet" />
 
-    <!-- Style -->
-    <link rel="stylesheet" href="./assets/css/root.css" />
-    <link rel="stylesheet" href="./assets/css/header-transparent.css" />
-    <link rel="stylesheet" href="./assets/css/index/style.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="stylesheet" href="./assets/css/index/animations.css">
+    <link rel="stylesheet" href="./assets/css/menu/style.css">
+    <link rel="stylesheet" href="./assets/css/index/style.css">
+    <link rel="stylesheet" href="./assets/css/index/style_tablet.css">
+    <link rel="stylesheet" href="./assets/css/index/style_mobile.css">
+    <!-- Headers -->
+    <link rel="stylesheet" href="./assets/css/header/transparent/style.css">
+    <link rel="stylesheet" href="./assets/css/header/transparent/style_tablet.css">
+    <link rel="stylesheet" href="./assets/css/header/transparent/style_mobile.css">
+    <!-- Footers -->
+    <link rel="stylesheet" href="./assets/css/footer/style.css">
+    <link rel="stylesheet" href="./assets/css/footer/style_tablet.css">
+    <link rel="stylesheet" href="./assets/css/footer/style_mobile.css">
 
-    <!-- Scripts -->
-    <script src="./assets/js/translate.js" defer></script>  
+    <!-- Scripts JavaScript -->
+    <script src="./assets/js/menu.js" defer></script>
+    <script src="./assets/js/translate.js" defer></script>
     <script src="./assets/js/animation.js" defer></script>
     <script src="./assets/js/ourServices.js" defer></script>
   </head>
@@ -29,27 +43,37 @@
   <body>
 
     <header>
-      <a href="index.html" tabindex="0"><img src="./assets/imgs/logo_branco_nav.svg" alt="Logo da TechNova Solutions" /></a>
-
+      <a href="index.html" tabindex="0"><img src="./assets/imgs/logo_header.svg" alt="Logo da TechNova Solutions" /><img src="./assets/imgs/logo_branco_nav.svg" alt="Logo da TechNova Solutions" />
+      </a>
+      <!-- Navegação principal -->
       <nav>
-        <a href="./index.html" tabindex="1"><p>Início</p></a>
-        <a href="./contact.html" tabindex="2"><p>Contato</p></a>
-        <a href="./aboutUs.html" tabindex="3"><p>Sobre nós</p></a>
+        <button class="menu-btn ham-menu" aria-label="Abrir/fechar menu"><img src="./assets/imgs/menu.svg" alt="Abrir/fechar menu" id="ham-image"></button> 
+        <a href="./index.html" tabindex="1" aria-label="Botão para página início"><p>Início</p></a>
+        <a href="./contact.html" tabindex="2" aria-label="Botão para página contato"><p>Contato</p></a>
+        <a href="./aboutUs.html" tabindex="3" aria-label="Botão para página sobre nós"><p>Sobre nós</p></a>
+        <!-- Seleção de idioma -->
         <div>
-          <select name="select_language" id="select-language" tabindex="4">
-            <option value="PT-BR">PT</option>
-            <option value="EN">EN</option>
+          <select name="select_language" id="select-language" tabindex="4" aria-label="Botão para selecionar o idioma">
+            <option value="PT-BR" aria-label="Idioma português">PT</option>
+            <option value="EN" aria-label="Idioma inglês">EN</option>
           </select>
-          <img src="./assets/imgs/seta-baixo.svg" alt="">
+          <img src="./assets/imgs/seta-baixo.svg" alt="Seta para baixo para indicar a seleção de idiomas">
         </div>
       </nav>
+
+      <div class="off-screen-menu">
+        <a href="./index.html" aria-label="Botão para página início">Início</a>
+        <a href="./contact.html" aria-label="Botão para página contato">Contato</a>
+        <a href="./aboutUs.html" aria-label="Botão para página sobre nós">Sobre nós</a>
+      </div>
 
     </header>
 
     <main>
-      
+      <!-- Banner -->
       <section>
         <img src="./assets/imgs/hero_background.png" alt="Banner"/>
+        <!-- Título e texto -->
         <div class="hidden">
           <h1>TechNova Solutions</h1>
           <p>
@@ -60,6 +84,7 @@
         </div>
       </section>
 
+      <!-- Por que nos escolher -->
       <section>
         <h2 class="hidden">Por que nos escolher</h2>
 
@@ -94,6 +119,7 @@
         </span>
       </section>
 
+      <!-- Alguns parceiros -->
       <section>
         <h2 class="hidden">Alguns dos parceiros da TechNova</h2>
 
@@ -107,6 +133,7 @@
 
       </section>
 
+      <!-- Frase motivadora -->
       <section>
         <p class="hidden">
           Impulsionando possibilidades através de soluções tecnológicas
@@ -114,9 +141,11 @@
         </p>
       </section>
 
+      <!-- Nossos Serviços -->
       <section>
         <h2 class="hidden">Nossos Serviços</h2>
         
+        <!-- Cards pequenos e texto -->
         <span class="our_services">
           <div class="services-cards">
             <div class="card hidden">
@@ -153,11 +182,14 @@
             <p class="hidden">
               Na TechNova Solutions, oferecemos um universo de possibilidades tecnológicas. Desde o desenvolvimento de aplicativos móveis e sistemas web personalizados até a implementação de inteligência artificial e realidade aumentada, estamos aqui para transformar suas ideias em realidade digital. Com uma equipe dedicada e experiente, podemos ajudar sua empresa a inovar, crescer e se destacar no mercado digital. Descubra como podemos impulsionar o seu sucesso hoje mesmo.
             </p>
-            <button id="services-button-see_more" class="hidden" tabindex="5">Ver mais</button>
+            <!-- Botao ver mais -->
+            <button id="services-button-see_more" class="hidden" tabindex="5" aria-label="Botão para ver mais serviços">Ver mais</button>
           </div>
         </span>
 
+        <!-- Cards grandes -->
         <span class="our_services_cards" hidden>
+          <div>
             <div class="card-big hidden">
               <img src="./assets/imgs/lampada.svg" alt="Ícone de uma lâmpada">
               <h4>Consultoria em Tecnologia e Inovação</h4>
@@ -228,11 +260,13 @@
                 Simplificamos a gestão empresarial com software ERP personalizado, projetado para integrar e automatizar todos os aspectos do seu negócio. Desde a contabilidade até o gerenciamento de estoque e recursos humanos, nossas soluções ajudam a otimizar operações e melhorar a eficiência.
               </p>
             </div>
-            <button id="services-button-see_less" class="hidden" tabindex="5">Ver menos</button>
           </div>
+          <!-- Botão ver menos -->
+          <button id="services-button-see_less" class="hidden" tabindex="6" aria-label="Botão para ver menos">Ver menos</button>
         </span>
       </section>
 
+      <!-- Atendimento -->
       <section>
         <span>
           <h2 class="hidden">Atendimento único</h2>
@@ -272,6 +306,7 @@
         </span>
       </section>
 
+      <!-- Avaliações -->
       <section>
         <h2 class="hidden">Avaliações de alguns clientes</h2>
 
@@ -332,23 +367,26 @@
     <footer>
       <section>
         <img class="logo-footer" src="./assets/imgs/logo_header.svg" alt="Logo da TechNova Solutions" />
+        <!-- Links institucionais -->
         <nav>
-          <a href="./privacy-services.html" tabindex="6">Termos de serviço</a>
-          <a href="./privacy-services.html" tabindex="7">Politíca de privacidade</a>
-          <a href="./work_with_us.html" tabindex="8">Trabalhe conosco</a>
+          <a href="./privacy-services.html" tabindex="7" aria-label="Botão para página termos de serviço">Termos de serviço</a>
+          <a href="./privacy-services.html" tabindex="8" aria-label="Botão para página política de privacidade">Política de privacidade</a>
+          <a href="./work_with_us.html" tabindex="9" aria-label="Botão para página trabalhe conosco">Trabalhe conosco</a>
         </nav>
+        <!-- Links para redes sociais -->
         <nav>
-          <a href="www.facebook.com" tabindex="9"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook"/></a>
-          <a href="www.instagram.com" tabindex="10"><img src="./assets/imgs/insta_icon.svg" alt="Instagram"/></a>
-          <a href="www.twitter.com" tabindex="11"><img src="./assets/imgs/x_icon.svg" alt="Twitter"/></a>
-          <a href="www.linkedin.com" tabindex="12"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn"/></a>
-          <a href="www.youtube.com" tabindex="13"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube"/></a>
+          <a href="www.facebook.com" tabindex="10" aria-label="Botão para o site Facebook"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook" /></a>
+          <a href="www.instagram.com" tabindex="11" aria-label="Botão para o site Instagram"><img src="./assets/imgs/insta_icon.svg" alt="Instagram" /></a>
+          <a href="www.twitter.com" tabindex="12" aria-label="Botão para o site Twitter"><img src="./assets/imgs/x_icon.svg" alt="Twitter" /></a>
+          <a href="www.linkedin.com" tabindex="13" aria-label="Botão para o site LinkedIn"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn" /></a>
+          <a href="www.youtube.com" tabindex="14" aria-label="Botão para o site YouTube"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube" /></a>
         </nav>
       </section>
-      <div>
-        <hr>
-        <p>Copyright &copy 2024 Empresa. Todos os direitos reservados.</p>
-      </div>
+      <section>
+        <!-- Separador e direitos autorais -->
+        <hr />
+        <p>Copyright &copy; 2024 Empresa. Todos os direitos reservados.</p>
+      </section>
     </footer>
 
   </body>

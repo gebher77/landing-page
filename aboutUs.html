@@ -1,190 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
   <head>
-    <title>Sobre nós</title>
+    <!-- Metadados do documento -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Título e favicon da página -->
+    <title>Sobre nós</title>
     <link rel="shortcut icon" href="./assets/imgs/logo_header.svg" type="image/x-icon">
-    <link rel="stylesheet" href="/landing-page/assets/css/root.css" />
-    <link rel="stylesheet" href="./assets/css/aboutUs/style.css">
-    <link rel="stylesheet" href="./assets/css/header-transparent.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css"/>
+    
+    <!-- Arquivos de estilos CSS -->
+    <link rel="stylesheet" href="/landing-page/assets/css/root.css">
     <link rel="stylesheet" href="./assets/css/aboutUs/animations.css">
+    <link rel="stylesheet" href="./assets/css/menu/style.css">
+    <link rel="stylesheet" href="./assets/css/aboutUs/style.css">
+    <link rel="stylesheet" href="./assets/css/aboutUs/style_tablet.css">
+    <link rel="stylesheet" href="./assets/css/aboutUs/style_mobile.css">
+    <!-- Modal -->
+     <link rel="stylesheet" href="./assets/css/modal/style.css">
+    <!-- Headers -->
+    <link rel="stylesheet" href="./assets/css/header/transparent/style.css">
+    <link rel="stylesheet" href="./assets/css/header/transparent/style_tablet.css">
+    <link rel="stylesheet" href="./assets/css/header/transparent/style_mobile.css">
+    <!-- Footers -->
+    <link rel="stylesheet" href="./assets/css/footer/style.css">
+    <link rel="stylesheet" href="./assets/css/footer/style_tablet.css">
+    <link rel="stylesheet" href="./assets/css/footer/style_mobile.css">
 
+    <!-- Scripts JavaScript -->
     <script src="./assets/js/translate.js" defer></script>
     <script src="./assets/js/animation.js" defer></script>
+    <script src="./assets/js/menu.js" defer></script>
   </head>
 
   <body>
 
     <header>
-      <a href="index.html" tabindex="0"><img src="./assets/imgs/logo_branco_nav.svg" alt="Logo da TechNova Solutions" /></a>
-
+      <a href="index.html" tabindex="0"><img src="./assets/imgs/logo_header.svg" alt="Logo da TechNova Solutions" /><img src="./assets/imgs/logo_branco_nav.svg" alt="Logo da TechNova Solutions" />
+      </a>
+      <!-- Navegação principal -->
       <nav>
-        <a href="./index.html" tabindex="1"><p>Início</p></a>
-        <a href="./contact.html" tabindex="2"><p>Contato</p></a>
-        <a href="./aboutUs.html" tabindex="3"><p>Sobre nós</p></a>
+        <button class="menu-btn ham-menu" aria-label="Abrir/fechar menu"><img src="./assets/imgs/menu.svg" alt="Abrir/fechar menu" id="ham-image"></button> 
+        <a href="./index.html" tabindex="1" aria-label="Botão para página início"><p>Início</p></a>
+        <a href="./contact.html" tabindex="2" aria-label="Botão para página contato"><p>Contato</p></a>
+        <a href="./aboutUs.html" tabindex="3" aria-label="Botão para página sobre nós"><p>Sobre nós</p></a>
+        <!-- Seleção de idioma -->
         <div>
-          <select name="select_language" id="select-language" tabindex="4">
-            <option value="PT-BR">PT</option>
-            <option value="EN">EN</option>
+          <select name="select_language" id="select-language" tabindex="4" aria-label="Botão para selecionar o idioma">
+            <option value="PT-BR" aria-label="Idioma português">PT</option>
+            <option value="EN" aria-label="Idioma inglês">EN</option>
           </select>
-          <img src="./assets/imgs/seta-baixo.svg" alt="">
+          <img src="./assets/imgs/seta-baixo.svg" alt="Seta para baixo para indicar a seleção de idiomas">
         </div>
       </nav>
+
+      <div class="off-screen-menu">
+        <a href="./index.html" aria-label="Botão para página início">Início</a>
+        <a href="./contact.html" aria-label="Botão para página contato">Contato</a>
+        <a href="./aboutUs.html" aria-label="Botão para página sobre nós">Sobre nós</a>
+      </div>
 
     </header>
 
     <main>
-
+      <!-- Seção do banner e introdução -->
       <section>
         <img src="./assets/imgs/bannerAboutUs.png" alt="Banner" />
-
+        <!-- Introdução sobre a empresa -->
         <span class="hidden">
           <h1>Quem somos</h1>
           <p>
             Na TechNova Solutions, transformamos ideias em soluções digitais inovadoras. Nosso compromisso é desenvolver software personalizado e tecnologias de ponta para impulsionar o sucesso de nossos clientes em um mundo em constante evolução.
           </p>
         </span>
-
-        <span>
-          <button tabindex="5">Equipe</button>
-          <div></div>
-          <button tabindex="6">Valores</button>
-          <div></div>
-          <button tabindex="7">Missão</button>
-          <div></div>
-          <button tabindex="8">Abordagem</button>
-          <div></div>
-          <button tabindex="9">Compromisso com a inovação</button>
-          <div></div>
-          <button tabindex="10">Tecnologias emergentes</button>
-        </span>
       </section>
 
+      <!-- Seção sobre a equipe -->
       <section>
         <span class="hidden">
-          <h2>Nossa Equipe</h1>
+          <h2>Nossa Equipe</h2>
           <p>
-            Nossa equipe é composta por profissionais altamente qualificados e
-            apaixonados por tecnologia. Trabalhamos juntos para transformar
-            desafios complexos em soluções simples e eficazes, sempre com o
-            objetivo de superar as expectativas dos nossos clientes. Cada membro
-            da nossa equipe traz uma perspectiva única e um conjunto de
-            habilidades que enriquecem nossos projetos, promovendo um ambiente
-            de trabalho colaborativo e inovador.
+            Nossa equipe é composta por profissionais altamente qualificados e apaixonados por tecnologia. Trabalhamos juntos para transformar desafios complexos em soluções simples e eficazes, sempre com o objetivo de superar as expectativas dos nossos clientes. Cada membro da nossa equipe traz uma perspectiva única e um conjunto de habilidades que enriquecem nossos projetos, promovendo um ambiente de trabalho colaborativo e inovador.
           </p>
         </span>
-
-        <img src="./assets/imgs/our_team_image.png" alt="" class="hidden"/>
+        <img src="./assets/imgs/our_team_image.png" alt="Imagem da nossa equipe" class="hidden"/>
       </section>
 
+      <!-- Citação -->
       <section class="hidden">
         <p><b>"</b>Inovação com Integridade, Resultados com Excelência.<b>"</b></p>
       </section>
 
+      <!-- Seção sobre a missão -->
       <section>
         <span class="hidden">
-          <h2>Nossa Missão</h1>
+          <h2>Nossa Missão</h2>
           <p>
-            Na TechNova Solutions, nossa missão é capacitar empresas a alcançar
-            novos patamares através da tecnologia. Somos especialistas em
-            desenvolver software personalizado que atende às necessidades
-            específicas de cada cliente, garantindo soluções eficientes e
-            inovadoras. Nosso compromisso é transformar desafios complexos em
-            soluções digitais que impulsionam o sucesso e a competitividade dos
-            nossos clientes no mercado global.
+            Na TechNova Solutions, nossa missão é capacitar empresas a alcançar novos patamares através da tecnologia. Somos especialistas em desenvolver software personalizado que atende às necessidades específicas de cada cliente, garantindo soluções eficientes e inovadoras. Nosso compromisso é transformar desafios complexos em soluções digitais que impulsionam o sucesso e a competitividade dos nossos clientes no mercado global.
           </p>
         </span>
-
+        <!-- Seção sobre os valores -->
         <span class="hidden">
           <h2>Nossos Valores</h2>
           <p>
-            Acreditamos na importância de um trabalho ético, transparente e
-            focado no cliente. Nosso compromisso com a excelência e a
-            integridade nos permite construir relações de confiança e
-            proporcionar resultados de alta qualidade. Valorizamos a
-            honestidade, a responsabilidade e a dedicação em cada projeto,
-            garantindo que cada solução seja desenvolvida com o máximo de
-            cuidado e atenção aos detalhes.
+            Acreditamos na importância de um trabalho ético, transparente e focado no cliente. Nosso compromisso com a excelência e a integridade nos permite construir relações de confiança e proporcionar resultados de alta qualidade. Valorizamos a honestidade, a responsabilidade e a dedicação em cada projeto, garantindo que cada solução seja desenvolvida com o máximo de cuidado e atenção aos detalhes.
           </p>
         </span>
       </section>
 
+      <!-- Seção sobre a abordagem -->
       <section>
-        <img src="./assets/imgs/unsplash_wxWulfjN-G0.png" alt="" class="hidden"/>
-
+        <img src="./assets/imgs/unsplash_wxWulfjN-G0.png" alt="Imagem ilustrativa" class="hidden"/>
         <span class="hidden">
           <h2>Nossa abordagem</h2>
           <p>
-            Adotamos uma abordagem ágil em todos os nossos projetos, permitindo
-            adaptações rápidas às mudanças do mercado e às necessidades dos
-            nossos clientes.
+            Adotamos uma abordagem ágil em todos os nossos projetos, permitindo adaptações rápidas às mudanças do mercado e às necessidades dos nossos clientes.
           </p>
           <p>
-            Acreditamos que a flexibilidade e a capacidade de inovação são
-            essenciais para o sucesso no ambiente de negócios atual.
+            Acreditamos que a flexibilidade e a capacidade de inovação são essenciais para o sucesso no ambiente de negócios atual.
           </p>
           <p>
-            Esta abordagem nos permite entregar resultados mais rapidamente, com
-            maior eficiência e qualidade, mantendo sempre o foco nas
-            necessidades específicas de cada cliente.
+            Esta abordagem nos permite entregar resultados mais rapidamente, com maior eficiência e qualidade, mantendo sempre o foco nas necessidades específicas de cada cliente.
           </p>
         </span>
       </section>
 
+      <!-- Seção sobre o compromisso com a inovação -->
       <section class="hidden">
         <h2>Nosso Compromisso com a Inovação</h2>
         <p>
-            A inovação está no coração da TechNova Solutions. Continuamente
-            exploramos novas tecnologias e metodologias para manter nossos
-            clientes na vanguarda do mercado. Cada projeto é uma oportunidade
-            para inovar e criar algo extraordinário. Estamos dedicados a
-            encontrar soluções criativas e eficazes que proporcionem valor real
-            e duradouro, garantindo que nossos clientes estejam sempre um passo
-            à frente da concorrência.
+          A inovação está no coração da TechNova Solutions. Continuamente exploramos novas tecnologias e metodologias para manter nossos clientes na vanguarda do mercado. Cada projeto é uma oportunidade para inovar e criar algo extraordinário. Estamos dedicados a encontrar soluções criativas e eficazes que proporcionem valor real e duradouro, garantindo que nossos clientes estejam sempre um passo à frente da concorrência.
         </p>
       </section>
 
+      <!-- Seção sobre tecnologias emergentes -->
       <section>
         <span class="hidden">
           <h2>Tecnologias Emergentes</h2>
           <p>
-            Estamos sempre na vanguarda da tecnologia, incorporando as últimas
-            tendências como inteligência artificial e realidade aumentada em
-            nossos projetos. Isso nos permite criar soluções que não apenas
-            atendem, mas superam as expectativas dos nossos clientes. Investimos
-            continuamente em pesquisa e desenvolvimento para garantir que
-            estamos utilizando as tecnologias mais avançadas disponíveis,
-            proporcionando um diferencial competitivo aos nossos parceiros.
+            Estamos sempre na vanguarda da tecnologia, incorporando as últimas tendências como inteligência artificial e realidade aumentada em nossos projetos. Isso nos permite criar soluções que não apenas atendem, mas superam as expectativas dos nossos clientes. Investimos continuamente em pesquisa e desenvolvimento para garantir que estamos utilizando as tecnologias mais avançadas disponíveis, proporcionando um diferencial competitivo aos nossos parceiros.
           </p>
         </span>
-
-        <img id="tec_emerges" data-en="./assets/imgs/tecnologias_en.svg" data-pt="./assets/imgs/tecnologias_pt.svg" src="./assets/imgs/tecnologias_pt.svg" alt="" class="hidden"/>
+        <img id="tec_emerges" data-en="./assets/imgs/tecnologias_en.svg" data-pt="./assets/imgs/tecnologias_pt.svg" src="./assets/imgs/tecnologias_pt.svg" alt="Imagem de tecnologias emergentes" class="hidden"/>
       </section>
-
     </main>
 
     <footer>
       <section>
         <img class="logo-footer" src="./assets/imgs/logo_header.svg" alt="Logo da TechNova Solutions" />
+        <!-- Links institucionais -->
         <nav>
-          <a href="./privacy-services.html">Termos de serviço</a>
-          <a href="./privacy-services.html">Politíca de privacidade</a>
-          <a href="./work_with_us.html">Trabalhe conosco</a>
+          <a href="./privacy-services.html" tabindex="5" aria-label="Botão para página termos de serviço">Termos de serviço</a>
+          <a href="./privacy-services.html" tabindex="6" aria-label="Botão para página política de privacidade">Política de privacidade</a>
+          <a href="./work_with_us.html" tabindex="7" aria-label="Botão para página trabalhe conosco">Trabalhe conosco</a>
         </nav>
+        <!-- Links para redes sociais -->
         <nav>
-          <a href="www.facebook.com" tabindex="11"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook"/></a>
-          <a href="www.instagram.com" tabindex="12"><img src="./assets/imgs/insta_icon.svg" alt="Instagram"/></a>
-          <a href="www.twitter.com" tabindex="13"><img src="./assets/imgs/x_icon.svg" alt="Twitter"/></a>
-          <a href="www.linkedin.com" tabindex="14"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn"/></a>
-          <a href="www.youtube.com" tabindex="15"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube"/></a>
+          <a href="www.facebook.com" tabindex="8" aria-label="Botão para o site Facebook"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook" /></a>
+          <a href="www.instagram.com" tabindex="9" aria-label="Botão para o site Instagram"><img src="./assets/imgs/insta_icon.svg" alt="Instagram" /></a>
+          <a href="www.twitter.com" tabindex="10" aria-label="Botão para o site Twitter"><img src="./assets/imgs/x_icon.svg" alt="Twitter" /></a>
+          <a href="www.linkedin.com" tabindex="11" aria-label="Botão para o site LinkedIn"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn" /></a>
+          <a href="www.youtube.com" tabindex="12" aria-label="Botão para o site YouTube"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube" /></a>
         </nav>
       </section>
-      <div>
-        <hr>
-        <p>Copyright &copy 2024 Empresa. Todos os direitos reservados.</p>
-      </div>
+      <section>
+        <!-- Separador e direitos autorais -->
+        <hr />
+        <p>Copyright &copy; 2024 Empresa. Todos os direitos reservados.</p>
+      </section>
     </footer>
 
   </body>

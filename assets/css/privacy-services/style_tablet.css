@@ -1,0 +1,32 @@
+@media screen and (max-width: 835px) {
+    main {
+        margin: 80px 120px;
+        padding: 8px 26px 32px 26px;
+        width: initial;
+        gap: 32px;
+
+        section:nth-of-type(2) {
+            ul {
+                justify-content: space-between;
+
+                li {
+                    p {
+                      font: var(--headline-headline-xxs);
+                    }
+                }
+            }
+        }
+
+        section:nth-of-type(3) {
+            div {     
+                h1 {
+                  font: var(--headline-headline-lg);
+                }
+            
+                h2 {
+                  font: var(--headline-headline-sm);
+                }
+            }
+        }
+    }
+}

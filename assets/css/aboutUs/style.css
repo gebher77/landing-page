@@ -1,10 +1,11 @@
 html {
     background-color: var(--brand_primary_100);
+    overflow-x: hidden;
 }
 
 h2 {
     font: var(--headline-headline-lg);
-    background: var(--gradient-primarycolor-greatersecondarycolor);
+    background: var(--gradiente-padrao);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -16,7 +17,7 @@ h2 {
 main {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 4.167vw;
 
     /* Parágrafo do banner */
     section:nth-of-type(1) {
@@ -51,31 +52,6 @@ main {
                 color: var(--gray_scale_50);
             }
         }
-
-        span:nth-of-type(2) {
-            font: var(--headline-headline-sm);
-            background: var(--gray_scale_950);
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-            padding: 16px 32px;
-            width: 100%;
-
-            button {
-                cursor: pointer;
-                background: var(--gradient-primarycolor-greatersecondarycolor);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font: var(--headline-headline-sm);  
-                border: none;
-            }
-
-            div {
-                padding: 0.1px 1px;
-                background: var(--gradiente-padrao-diagonal);
-            }
-        }
     }
 
     section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-child(5), section:nth-child(6), section:nth-child(7) {
@@ -90,7 +66,7 @@ main {
         span {
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 1.25vw;
             width: 40vw;
 
             h2 {
@@ -122,7 +98,7 @@ main {
         span {
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 1.25vw;
             width: 40vw;
         }
 
@@ -151,7 +127,7 @@ main {
         span {
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 1.25vw;
             width: 40vw;
 
             h2 {
@@ -169,7 +145,7 @@ main {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        gap: 24px;
+        gap: 1.25vw;
 
         h2 {
             width: 41%;
@@ -186,14 +162,14 @@ main {
 
     section:nth-child(7) {
         display: flex;
-        gap: 24px;
+        gap: 1.25vw;
         margin-bottom: 80px;
         justify-content: space-between;
 
         span {
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 1.25vw;
             width: 20vw;
 
             h2 {

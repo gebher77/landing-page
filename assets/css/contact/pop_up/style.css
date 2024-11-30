@@ -1,0 +1,25 @@
+/* Centralizar o popup */
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none; /* Inicialmente escondido */
+  font: var(--headline-headline-xxs);
+  color: var(--gray_scale_50);
+  border-radius: 24px;
+
+  div {
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand_primary_700_original);
+    padding: 20px;
+  }
+}
+

@@ -1,0 +1,116 @@
+@media screen and (max-width: 361px) {
+    h2 {
+        font: var(--headline-headline-sm);
+    }
+
+    main {
+        gap: 40px;
+
+        section:nth-of-type(1) {
+            div {
+                h1 {
+                    font: var(--headline-headline-sm);
+                }
+
+                p {
+                    font: var(--body-body-sm);
+                }
+            }
+        }
+
+        section:nth-child(2), section:nth-child(3), section:nth-child(5), section:nth-child(6), section:nth-child(7) {
+            margin: 0px 8px;
+        }
+
+        section:nth-of-type(2) {
+            span {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        section:nth-of-type(3) {
+            text-align: center;
+
+            div {
+
+                img {
+                    height: 60%;
+                }
+            }
+        }
+
+        section:nth-of-type(4) {
+            p {
+                width: 100%;
+                font: var(--headline-headline-xs);
+            }
+        }
+
+        section:nth-of-type(5) {
+
+            span:nth-of-type(1) {
+                gap: 24px;
+                
+                .services-cards {
+                    display: flex;
+                    flex-direction: column;
+    
+                    .card {
+    
+                        h4 {
+                            font: var(--headline-headline-xs);
+                        }
+                        
+                        p {
+                            font: var(--body-body-sm);
+                        }
+                    }
+                }
+            }
+
+            span:nth-of-type(2) {
+                gap: 24px;
+                
+                div:nth-of-type(1) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 24px;
+
+                    .card-big {
+                        height: 100%;
+
+                        h4 {
+                            font: var(--headline-headline-xs);
+                        }
+                        
+                        p {
+                            font: var(--body-body-sm);
+                        }
+                    }
+                }
+
+                button {
+                    width: 40vw;
+                }
+            }
+        }
+
+        section:nth-of-type(6) {
+            gap: 24px;
+
+            span:nth-of-type(1) {
+                gap: 24px;
+            }
+
+            span:nth-of-type(2) {
+                gap: 24px;
+            }
+        }
+
+        section:nth-of-type(7) {
+            margin-bottom: 40px;
+        }
+    }
+}
