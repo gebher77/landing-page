@@ -1,0 +1,86 @@
+@media screen and (max-width: 361px) {
+    main {
+        section:nth-of-type(1) {
+            span:nth-of-type(1) {
+                h1 {
+                    font: var(--headline-headline-sm);
+                }
+
+                p {
+                    font: var(--body-body-sm);
+                }
+            }
+        }
+
+        section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-child(5), section:nth-child(6), section:nth-child(7) {
+            margin: 0px 8px;
+        }
+
+        section:nth-of-type(2) {
+            span {
+                h2 {
+                    font: var(--headline-headline-sm);
+                    width: 50%;
+                }
+            }
+        }
+
+        section:nth-of-type(3) {
+            font: var(--headline-headline-xs);
+        }
+
+        section:nth-of-type(4) {
+            span:nth-of-type(1) {
+                h2 {
+                    font: var(--headline-headline-sm);
+                    width: 50%;
+                }
+            }
+
+            span:nth-of-type(2) {
+                h2 {
+                    font: var(--headline-headline-sm);
+                    width: 60%;
+                }
+            }
+        }
+
+        section:nth-of-type(5) {
+            img {
+                display: none;
+            }
+
+            span {
+                h2 {
+                    font: var(--headline-headline-sm);
+                    width: 65%;
+                }
+            }
+        }
+
+        section:nth-of-type(6) {
+            h2 {
+                font: var(--headline-headline-sm);
+                background: var(--gradiente-padrao-diagonal);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+            }
+        }
+
+        section:nth-of-type(7) {
+            margin-bottom: 40px;
+
+            span {
+                h2 {
+                    font: var(--headline-headline-sm);
+                    width: 90%;
+                }
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+}

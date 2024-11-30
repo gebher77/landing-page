@@ -1,0 +1,18 @@
+@media screen and (max-width: 361px) {
+    header {
+        margin: 0px;
+        padding: 3px 16px;
+
+        nav {
+            .menu-btn {
+                
+                img {
+                    width: 30px;
+                }
+            }
+            a {
+                display: none;
+            }
+        }
+    }
+}

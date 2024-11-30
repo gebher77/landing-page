@@ -1,11 +1,14 @@
 html {
     background-color: var(--brand_primary_100);
+}
+
+html, body {
     overflow-x: hidden;
 }
 
 h2 {
     font: var(--headline-headline-lg);
-    background: var(--gradient-primarycolor-greatersecondarycolor);
+    background: var(--gradiente-padrao);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
@@ -51,7 +54,6 @@ main {
             h1 {
                 font: var(--headline-headline-xxl);
                 color: var(--gray_scale_50);
-                
             }
 
             p {
@@ -61,7 +63,7 @@ main {
         }
     }
 
-    section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-child(5), section:nth-child(6), section:nth-child(7) {
+    section:nth-child(2), section:nth-child(3), section:nth-child(5), section:nth-child(6), section:nth-child(7) {
         margin: 0px 64px;
     }
 
@@ -70,7 +72,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 2.0834vw;
         background-color: var(--brand_primary_100);
 
         span {
@@ -100,7 +102,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 2.0834vw;
 
         div {
             display: flex;
@@ -133,30 +135,30 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 2.0834vw;
 
         span[hidden] {
             display: none !important;
-          }
+        }
 
         span:nth-of-type(1) {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            gap: 80px;
+            gap: 2.0834vw;
 
             .services-cards {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(2, 1fr);
-                gap: 80px;
+                gap: 4.167vw;
 
                 .card {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     text-align: center;
-                    gap: 16px;
+                    gap: 0.834vw;
                     background-color: var(--brand_primary_100);
                     box-shadow: var(--cards-box-shadow);
                     padding: 32px 4px;
@@ -178,7 +180,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 80px;
+                gap: 4.167vw;
                 width: 150%;
 
                 p {
@@ -216,38 +218,54 @@ main {
         }
 
         span:nth-of-type(2) {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.875vw;
 
-            .card-big {
-                width: 80%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                gap: 24px;
-                background-color: var(--brand_primary_100);
-                box-shadow: var(--cards-box-shadow);
-                padding: 32px 24px;
-                height: 410px;
-                border-radius: 16px;
+            div:nth-of-type(1) {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 1.875vw;
+                justify-items: center;
 
-                h4 {
-                    font: var(--headline-headline-xs);
-                    color: var(--gray_scale_950);
+                div:nth-of-type(9) {
+                    grid-column: 2;
                 }
-                
-                p {
-                    font: var(--body-body-md);
-                    color: var(--gray_scale_950);
+
+                div:nth-of-type(10) {
+                    grid-column: 3;
+                }
+
+                .card-big {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    gap: 1.25vw;
+                    background-color: var(--brand_primary_100);
+                    box-shadow: var(--cards-box-shadow);
+                    padding: 32px 24px;
+                    height: 410px;
+                    border-radius: 16px;
+    
+                    h4 {
+                        font: var(--headline-headline-xs);
+                        color: var(--gray_scale_950);
+                    }
+                    
+                    p {
+                        font: var(--body-body-md);
+                        color: var(--gray_scale_950);
+                    }
                 }
             }
 
             button {
                 cursor: pointer;
-                width: 80%;
+                width: 20vw;
                 height: 44px;
                 font: var(--headline-headline-xxs);
                 border: none;
@@ -279,12 +297,12 @@ main {
     section:nth-of-type(6) {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 2.0834vw;
 
         span:nth-child(1) {
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 1.25vw;
 
             p {
                 font: var(--body-body-lg);
@@ -299,13 +317,13 @@ main {
             .treatments_paragraphs {
                 display: flex;
                 flex-direction: column;
-                gap: 40px;
+                gap: 2.0834vw;
                 width: 35vw;
 
                 div {
                     display: flex;
                     flex-direction: column;
-                    gap: 32px;
+                    gap: 1.67vw;
                     padding: 0 32px;
 
                     h3 {
@@ -327,13 +345,13 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 2.0834vw;
         margin-bottom: 80px;
 
         span {
             display: flex;
             justify-content: space-between;
-            gap: 32px;
+            gap: 1.67vw;
             width: 100%;
 
             .reviews_container {
@@ -355,7 +373,7 @@ main {
 
                 .reviews_infos {
                     display: flex;
-                    gap: 16px;
+                    gap: 0.834vw;
                     align-items: center;
 
                     img {

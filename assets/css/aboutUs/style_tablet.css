@@ -1,0 +1,130 @@
+@media screen and (max-width: 835px) {
+    main {
+        section:nth-of-type(1) {
+            span:nth-of-type(1) {
+                h1 {
+                    font: var(--headline-headline-xl);
+                }
+
+                p {
+                    font: var(--body-body-md);
+                }
+            }
+        }
+
+        section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-child(5), section:nth-child(6), section:nth-child(7) {
+            margin: 0px 32px;
+        }
+
+        section:nth-of-type(2) {
+            flex-direction: column;
+
+            span {
+                width: 100%;
+                align-items: center;
+                gap: 24px;
+                
+                h2 {
+                    text-align: center;
+                    font: var(--headline-headline-md);
+                }
+
+                p {
+                    text-align: center;
+                    font: var(--body-body-md);
+                }
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        section:nth-of-type(3) {
+            font: var(--headline-headline-sm);
+            text-align: center;
+        }
+
+        section:nth-of-type(4) {
+            flex-direction: column;
+            gap: 24px;
+
+            span {
+                gap: 24px;
+                width: 100%;
+                text-align: center;
+                align-items: center;
+
+                h2 {
+                    font: var(--headline-headline-md);
+                }
+
+                p {
+                    font: var(--body-body-md);
+                }
+            }
+        }
+
+        section:nth-of-type(5) {
+            flex-direction: column;
+
+            img {
+                display: none;
+            }
+
+            span {
+                width: 100%;
+                text-align: center;
+                align-items: center;
+                gap: 24px;
+
+                h2 {
+                    font: var(--headline-headline-md);
+                }
+
+                p {
+                    font: var(--body-body-md);
+                }
+            }
+        }
+
+        section:nth-of-type(6) {
+            gap: 24px;
+
+            h2 {
+                font: var(--headline-headline-md);
+                width: 75%;
+            }
+
+            p {
+                font: var(--body-body-md);
+            }
+        }
+
+        section:nth-of-type(7) {
+            flex-direction: column;
+            margin-bottom: 40px;
+            gap: 24px;
+
+            span {
+                gap: 24px;
+                width: 100%;
+                text-align: center;
+                align-items: center;
+
+                h2 {
+                    font: var(--headline-headline-md);
+                }
+
+                p {
+                    font: var(--body-body-md);
+                }
+            }
+
+            img {
+                width: 70%;
+                align-self: center;
+            }
+        }
+    }
+}

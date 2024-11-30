@@ -2,50 +2,74 @@
 <html lang="pt-BR">
 
   <head>
-    <title>Trabalhe conosco</title>
+    <!-- Metadados do documento -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/imgs/logo_header.svg" type="image/x-icon">4 
 
-    <!-- Fontes -->
+    <!-- Título e favicon da página -->
+    <title>Trabalhe conosco</title>
+    <link rel="shortcut icon" href="./assets/imgs/logo_header.svg" type="image/x-icon">
+
+    <!-- Fontes externas -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet" />
 
-    <!-- Style -->
-    <link rel="stylesheet" href="./assets/css/root.css" />
-    <link rel="stylesheet" href="./assets/css/header-solid.css" />
-    <link rel="stylesheet" href="./assets/css/work_with_us/style.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <!-- Estilos CSS --> 
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/menu/style.css">
+    <link rel="stylesheet" href="./assets/css/work_with_us/style.css">
+    <link rel="stylesheet" href="./assets/css/work_with_us/style_tablet.css">
+    <link rel="stylesheet" href="./assets/css/work_with_us/style_mobile.css">
+    <!-- Headers -->
+    <link rel="stylesheet" href="./assets/css/header/solid/style.css">
+    <link rel="stylesheet" href="./assets/css/header/solid/style_tablet.css">
+    <link rel="stylesheet" href="./assets/css/header/solid/style_mobile.css">
+    <!-- Footers -->
+    <link rel="stylesheet" href="./assets/css/footer/style.css">
+    <link rel="stylesheet" href="./assets/css/footer/style_tablet.css">
+    <link rel="stylesheet" href="./assets/css/footer/style_mobile.css">
+
+    <!-- Scripts JavaScript -->
+    <script src="./assets/js/translate.js" defer></script>
+    <script src="./assets/js/menu.js" defer></script>
+    <script src="./assets/js/breadcrumbs.js" defer></script>
   </head>
 
   <body>
 
     <header>
-      <a href="index.html" tabindex="0"><img src="./assets/imgs/logo_preto_nav.svg" alt="Logo da TechNova Solutions" /></a>
-
+      <a href="index.html" tabindex="0"><img src="./assets/imgs/logo_header.svg" alt="Logo da TechNova Solutions" /><img src="./assets/imgs/logo_preto_nav.svg" alt="Logo da TechNova Solutions" />
+      </a>
+      <!-- Navegação principal -->
       <nav>
-        <a href="./index.html" tabindex="1"><p>Início</p></a>
-        <a href="./contact.html" tabindex="2"><p>Contato</p></a>
-        <a href="./aboutUs.html" tabindex="3"><p>Sobre nós</p></a>
+        <button class="menu-btn ham-menu" aria-label="Abrir/fechar menu"><img src="./assets/imgs/menu.svg" alt="Abrir/fechar menu" id="ham-image"></button> 
+        <a href="./index.html" tabindex="1" aria-label="Botão para página início"><p>Início</p></a>
+        <a href="./contact.html" tabindex="2" aria-label="Botão para página contato"><p>Contato</p></a>
+        <a href="./aboutUs.html" tabindex="3" aria-label="Botão para página sobre nós"><p>Sobre nós</p></a>
+        <!-- Seleção de idioma -->
         <div>
-          <select name="select_language" id="select-language" tabindex="4">
-            <option value="PT-BR">PT</option>
-            <option value="EN">EN</option>
+          <select name="select_language" id="select-language" tabindex="4" aria-label="Botão para selecionar o idioma">
+            <option value="PT-BR" aria-label="Idioma português">PT</option>
+            <option value="EN" aria-label="Idioma inglês">EN</option>
           </select>
-          <img src="./assets/imgs/seta-baixo.svg" alt="">
+          <img src="./assets/imgs/seta-baixo.svg" alt="Seta para baixo para indicar a seleção de idiomas">
         </div>
       </nav>
+
+      <div class="off-screen-menu">
+        <a href="./index.html" aria-label="Botão para página início">Início</a>
+        <a href="./contact.html" aria-label="Botão para página contato">Contato</a>
+        <a href="./aboutUs.html" aria-label="Botão para página sobre nós">Sobre nós</a>
+      </div>
 
     </header>
 
     <main>
-      <section>
-        <a href="index.html" tabindex="5">Início</a>
-        <img src="./assets/imgs/seta.svg" alt="">
-        <a href="" tabindex="6">Trabalhe conosco</a>
+      <!-- Navegação secundária (breadcrumbs) -->
+      <section id="breadcrumb">
       </section>
 
       <section>
@@ -53,7 +77,8 @@
           <p>
             Na TechNova Solutions, valorizamos talentos apaixonados por tecnologia e inovação. Se você busca desafios que estimulem o crescimento e deseja trabalhar em um ambiente dinâmico e colaborativo, aqui é o seu lugar. Junte-se a nós para criar soluções que moldam o futuro digital.
           </p>
-          <a href="www.linkedin.com" tabindex="7">Conheça</a>
+          <!-- Botão do linkedin -->
+          <a href="www.linkedin.com" tabindex="7" aria-label="Botão para o site LinkedIn">Conheça</a>
         </span>
 
         <img src="./assets/imgs/work_us_image.png" alt="">
@@ -63,26 +88,27 @@
     <footer>
       <section>
         <img class="logo-footer" src="./assets/imgs/logo_header.svg" alt="Logo da TechNova Solutions" />
+        <!-- Links institucionais -->
         <nav>
-          <a href="./privacy-services.html" tabindex="8">Termos de serviço</a>
-          <a href="./privacy-services.html" tabindex="9">Politíca de privacidade</a>
-          <a href="./work_with_us.html" tabindex="10">Trabalhe conosco</a>
+          <a href="./privacy-services.html" tabindex="8" aria-label="Botão para página termos de serviço">Termos de serviço</a>
+          <a href="./privacy-services.html" tabindex="9" aria-label="Botão para página política de privacidade">Política de privacidade</a>
+          <a href="./work_with_us.html" tabindex="10" aria-label="Botão para página trabalhe conosco">Trabalhe conosco</a>
         </nav>
+        <!-- Links para redes sociais -->
         <nav>
-          <a href="www.facebook.com" tabindex="11"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook" /></a>
-          <a href="www.instagram.com" tabindex="12"><img src="./assets/imgs/insta_icon.svg" alt="Instagram" /></a>
-          <a href="www.twitter.com" tabindex="13"><img src="./assets/imgs/x_icon.svg" alt="Twitter" /></a>
-          <a href="www.linkedin.com" tabindex="14"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn" /></a>
-          <a href="www.youtube.com" tabindex="15"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube" /></a>
+          <a href="www.facebook.com" tabindex="11" aria-label="Botão para o site Facebook"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook" /></a>
+          <a href="www.instagram.com" tabindex="12" aria-label="Botão para o site Instagram"><img src="./assets/imgs/insta_icon.svg" alt="Instagram" /></a>
+          <a href="www.twitter.com" tabindex="13" aria-label="Botão para o site Twitter"><img src="./assets/imgs/x_icon.svg" alt="Twitter" /></a>
+          <a href="www.linkedin.com" tabindex="14" aria-label="Botão para o site LinkedIn"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn" /></a>
+          <a href="www.youtube.com" tabindex="15" aria-label="Botão para o site YouTube"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube" /></a>
         </nav>
       </section>
-      <div>
-        <hr>
-        <p>Copyright &copy 2024 Empresa. Todos os direitos reservados.</p>
-      </div>
+      <section>
+        <!-- Separador e direitos autorais -->
+        <hr />
+        <p>Copyright &copy; 2024 Empresa. Todos os direitos reservados.</p>
+      </section>
     </footer>
-
-    <script src="./assets/js/translate.js"></script>
 
   </body>
 

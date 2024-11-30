@@ -1,0 +1,23 @@
+@media screen and (max-width: 361px) {
+    main {
+        align-items: center;
+        margin: 40px 4px;
+        padding: 8px 8px 32px 8px;
+
+        section:nth-of-type(2) {
+            span:nth-of-type(1) {
+                h1 {
+                    font: var(--headline-headline-sm);
+                }
+            }
+
+            span:nth-of-type(2) {
+                div {
+                  h2 {
+                    font: var(--headline-headline-xs);  
+                  }
+                }
+            }
+        }
+    }   
+}
