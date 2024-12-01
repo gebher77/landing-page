@@ -86,8 +86,8 @@ main {
             box-shadow: var(--cards-box-shadow);
             border-radius: 8px;
             height: 20vh;
+            resize: none;
           }
-
           .input_message::placeholder {
             font: var(--body-body-md);
           }

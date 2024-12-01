@@ -30,6 +30,7 @@
     <script src="./assets/js/changeTextVw.js" defer></script>
     <script src="./assets/js/menu.js" defer></script>
     <script src="./assets/js/breadcrumbs.js" defer></script>
+    <script src="./assets/js/termsPrivacy.js" defer></script>
   </head>
 
   <body>
@@ -69,13 +70,13 @@
       <!-- Botão mudar para políticas de privacidade ou termos de serviço -->
       <section>
         <ul>
-          <li>
-            <img src="assets/imgs/Vector.svg" alt="" />
-            <p class="active" tabindex="7" aria-label="Botão para mudar para termos de serviço">Termos de serviço</p>
+          <li id="termsH1" class="buttonBar" onclick="changeText()">
+            <img id="termsImg" data-normal="./assets/imgs/terms_normal.svg" data-active="./assets/imgs/Vector.svg" src="./assets/imgs/Vector.svg" alt="" />
+            <p class="active" id="termsButton" tabindex="7">Termos de serviço</p>
           </li>
-          <li>
-            <img src="assets/imgs/Vector - Copia.svg" alt="" />
-            <p tabindex="8" aria-label="Botão para mudar para politicas de privacidade">Políticas de privacidade</p>
+          <li id="privacyH1">
+            <img id="privacyImg" data-active="./assets/imgs/locker_selected.svg" data-normal="./assets/imgs/Vector - Copia.svg" src="./assets/imgs/Vector - Copia.svg" alt="" />
+            <p tabindex="8" id="privacyButton">Políticas de privacidade</p>
           </li>
         </ul>
       </section>
@@ -177,16 +178,16 @@
         <!-- Links institucionais -->
         <nav>
           <a href="./privacy-services.html" tabindex="9" aria-label="Botão para página termos de serviço">Termos de serviço</a>
-          <a href="./privacy-services.html" tabindex="10" aria-label="Botão para página política de privacidade">Política de privacidade</a>
+          <a href="./privacy-services.html?section=privacy" tabindex="10" aria-label="Botão para página política de privacidade">Política de privacidade</a>
           <a href="./work_with_us.html" tabindex="11" aria-label="Botão para página trabalhe conosco">Trabalhe conosco</a>
         </nav>
         <!-- Links para redes sociais -->
         <nav>
-          <a href="www.facebook.com" tabindex="12" aria-label="Botão para o site Facebook"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook" /></a>
-          <a href="www.instagram.com" tabindex="13" aria-label="Botão para o site Instagram"><img src="./assets/imgs/insta_icon.svg" alt="Instagram" /></a>
-          <a href="www.twitter.com" tabindex="14" aria-label="Botão para o site Twitter"><img src="./assets/imgs/x_icon.svg" alt="Twitter" /></a>
-          <a href="www.linkedin.com" tabindex="15" aria-label="Botão para o site LinkedIn"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn" /></a>
-          <a href="www.youtube.com" tabindex="16" aria-label="Botão para o site YouTube"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube" /></a>
+          <a href="https://www.facebook.com" tabindex="12" aria-label="Botão para o site Facebook" target="_blank"><img src="./assets/imgs/facebook_icon.svg" alt="Facebook" /></a>
+          <a href="https://www.instagram.com" tabindex="13" aria-label="Botão para o site Instagram" target="_blank"><img src="./assets/imgs/insta_icon.svg" alt="Instagram" /></a>
+          <a href="https://www.twitter.com" tabindex="14" aria-label="Botão para o site Twitter" target="_blank"><img src="./assets/imgs/x_icon.svg" alt="Twitter" /></a>
+          <a href="https://www.linkedin.com" tabindex="15" aria-label="Botão para o site LinkedIn" target="_blank"><img src="./assets/imgs/linkedin_icon.svg" alt="LinkedIn" /></a>
+          <a href="https://www.youtube.com" tabindex="16" aria-label="Botão para o site YouTube" target="_blank"><img src="./assets/imgs/youtube_icon.svg" alt="YouTube" /></a>
         </nav>
       </section>
       <section>

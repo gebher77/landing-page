@@ -7,6 +7,8 @@ footer {
   gap: 4.16vw;
   bottom: 0px;
 
+
+
   section:nth-of-type(1) {
     display: flex;
     align-items: center;
@@ -16,6 +18,10 @@ footer {
       padding: 0px 46px;
     }
 
+    a{
+      text-decoration: none;
+    }
+    
     nav:nth-of-type(1) {
       display: flex;
       gap: 32px;
