@@ -1,14 +1,17 @@
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Impede o redirecionamento
-    
+
     // Mostrar o popup
     document.getElementById('popup').style.display = 'block';
     document.body.classList.add('popup-active');
-    
+
     // Esconder o popup após alguns segundos
     setTimeout(function() {
         hidePopup();
     }, 3000); // Esconde após 3 segundos
+
+    // Limpar os campos do formulário
+    document.getElementById('contactForm').reset();
 });
 
 // Função para esconder o popup

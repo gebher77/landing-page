@@ -5,7 +5,7 @@
     border: none; /* sem borda */
     padding: 1.5rem; /* espaçamento interno */
     cursor: pointer; /* cursor em forma de mão */
-    background-image: url(/landing-page/assets/imgs/backTopButton.svg);
+    background-image: url(/assets/imgs/backTopButton.svg);
     background-color: transparent;
     background-size: cover;
     display: none;
