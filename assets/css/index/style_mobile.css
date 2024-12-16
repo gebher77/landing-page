@@ -1,4 +1,4 @@
-@media screen and (max-width: 361px) {
+@media screen and (max-width: 450px) {
     h2 {
         font: var(--headline-headline-sm);
     }

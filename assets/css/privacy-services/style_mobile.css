@@ -1,14 +1,9 @@
-@media screen and (max-width: 361px) {
+@media screen and (max-width: 450px) {
     main {
         margin: 40px 8px;
         padding: 8px 8px 32px 8px;
         gap: 8px;
 
-        section:nth-of-type(1) {
-            a:nth-of-type(2)::after {
-                content: 'Termos de serviço e ...';
-            }
-        }
 
         section:nth-of-type(2) {
             ul {

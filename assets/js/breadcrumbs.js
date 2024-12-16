@@ -31,6 +31,31 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 
-  breadcrumbContainer.innerHTML = breadcrumbItems.join(' <img src="./assets/imgs/seta.svg" alt="Seta de navegação"> ');
-});
+  function renderBreadcrumb() {
+    breadcrumbContainer.innerHTML = breadcrumbItems.join(' <img src="./assets/imgs/seta.svg" alt="Seta de navegação"> ');
+  }
 
+  // Função para atualizar o texto do breadcrumb
+  function updateBreadcrumbText() {
+    if (window.innerWidth < 450) {
+      pathMap['privacy-services.html'] = 'Termos de serviço e ...';
+    } else {
+      pathMap['privacy-services.html'] = 'Termos de serviço e políticas de privacidade';
+    }
+
+    // Atualiza o breadcrumb atual
+    if (breadcrumbItems.length === 2) {
+      breadcrumbItems[1] = `<a href="#">${pathMap[currentPath]}</a>`;
+    } else {
+      breadcrumbItems[breadcrumbItems.length - 1] = pathMap[currentPath];
+    }
+    renderBreadcrumb();
+  }
+
+  // Adiciona o evento de resize
+  window.addEventListener('resize', updateBreadcrumbText);
+
+  // Chama a função para definir o texto inicial
+  updateBreadcrumbText();
+  renderBreadcrumb();
+});
